@@ -1,0 +1,58 @@
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+
+.cnt-tit {
+    @include font(32px, 700, 1.4);
+    color: #212121;
+    margin-bottom: 8px;
+    span {
+        color: $cl-primary;
+    }
+}
+
+.cnt-sub-tit {
+    @include font(20px, 600, 1.4);
+    color: $cl-title;
+}
+
+.cnt-box {
+    width: 100%;
+    position: relative;
+    p {
+        @include font(18px, 400, 1.4);
+        color: #212121;
+    }
+    & + .cnt-box {
+        margin-top: 80px;
+    }
+}
+
+.cl-primary {
+    color: $cl-primary;
+}
+
+.dot-list {
+    li {
+        width: 100%;
+        position: relative;
+        padding-left: 12px;
+        &::before {
+            content: "";
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: $cl-text-2;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    }
+}

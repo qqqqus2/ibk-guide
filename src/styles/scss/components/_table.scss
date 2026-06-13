@@ -1,0 +1,41 @@
+.common-table {
+    width: 100%;
+    position: relative;
+    border-block: 1px solid $cl-gr-900;
+    table {
+        width: 100%;
+        position: relative;
+        border-collapse: collapse;
+        table-layout: fixed;
+        thead {
+            width: 100%;
+            height: 48px;
+            background-color: $cl-table-header;
+            border-bottom: 1px solid $cl-gr-200;
+            th {
+                @include font(16px, 600, 1.5);
+                color: $cl-title;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px solid $cl-gr-200;
+                th {
+                    background-color: $cl-box-bg;
+                }
+                th, td {
+                    padding: 16px 20px;
+                    border-right: 1px solid $cl-gr-200;
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

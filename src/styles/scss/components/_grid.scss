@@ -1,0 +1,21 @@
+.grid {
+    width: 100%;
+    position: relative;
+    display: grid;
+    @for $i from 1 through 12 {
+        &.repeat-#{$i} {
+            grid-template-columns: repeat($i, 1fr);
+        }
+    }
+    &.border {
+        .box {
+            width: 100%;
+            position: relative;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: $cl-white;
+            border: 1px solid $cl-border;
+            overflow: hidden;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+// 공통 요소
+@import "./base/var";
+@import "./base/fonts";
+@import "./base/mixin";
+@import "./base/reset";
+
+// 레이아웃
+@import "./layout/layout";
+
+// 컴포넌트
+@import "./components/text";
+@import "./components/tabs";
+@import "./components/grid";
+@import "./components/table";
+
+// 페이지 별
+@import "./pages/concept";
+@import "./pages/rule";
+@import "./pages/voice";
