@@ -126,6 +126,32 @@
                         > li {
                             width: 100%;
                             position: relative;
+                            > a {
+                                display: block;
+                                width: 100%;
+                                position: relative;
+                                padding: 8px 8px 8px 40px;
+                                border-radius: 4px;
+                                background-color: transparent;
+                                @include font(14px, 500, 1.43);
+                                color: #767676;
+                                text-align: left;
+                                transition: background-color 0.2s ease-in-out;
+                                &::after {
+                                    content: "";
+                                    width: 20px;
+                                    height: 20px;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: 8px;
+                                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M7.5 14.5L12.5 9.5L7.5 4.5' stroke='%23989898' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                                    @include bg-set;
+                                }
+                                &:hover {
+                                    background-color: #F3F3F3;
+                                }
+                            }
                             > button {
                                 display: block;
                                 width: 100%;
@@ -141,6 +167,16 @@
                                     background-color: #F3F3F3;
                                 }
                             }
+                            &.on {
+                                > a {
+                                    &::after {
+                                        transform: translateY(-50%) rotate(90deg);
+                                    }
+                                }
+                                .depth-3 {
+                                    display: block;
+                                }
+                            }
                             &.active {
                                 > button {
                                     background-color: #EEE;
@@ -153,6 +189,43 @@
                             }
                             &:last-child {
                                 margin-bottom: 2px;
+                            }
+                        }
+                        .depth-3 {
+                            width: 100%;
+                            position: relative;
+                            display: none;
+                            > li {
+                                width: 100%;
+                                position: relative;
+                                > button {
+                                    display: block;
+                                    width: 100%;
+                                    position: relative;
+                                    padding: 8px 8px 8px 56px;
+                                    border-radius: 4px;
+                                    background-color: transparent;
+                                    @include font(14px, 500, 1.43);
+                                    color: #767676;
+                                    text-align: left;
+                                    transition: background-color 0.2s ease-in-out;
+                                    &:hover {
+                                        background-color: #F3F3F3;
+                                    }
+                                }
+                                &.active {
+                                    > button {
+                                        background-color: #EEE;
+                                        color: $cl-primary;
+                                        font-weight: 600;
+                                    }
+                                }
+                                & + li {
+                                    margin-top: 4px;
+                                }
+                                &:last-child {
+                                    margin-bottom: 2px;
+                                }
                             }
                         }
                     }

@@ -1,6 +1,70 @@
 // ============================================
 // LNB
 // ============================================
+const initLnbAccordion = () => {
+    // Depth-1 accordion
+    const $depth1Items = document.querySelectorAll('.lnb .depth-1 > li');
+
+    $depth1Items.forEach(($item) => {
+        const $link = $item.querySelector(':scope > a');
+        const $depth2 = $item.querySelector('.depth-2');
+
+        if (!$link || !$depth2) return;
+
+        $link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // Toggle current item
+            const isOpen = $item.classList.contains('on');
+
+            // Close all depth-1 items
+            $depth1Items.forEach(($otherItem) => {
+                $otherItem.classList.remove('on');
+                const $otherDepth2 = $otherItem.querySelector('.depth-2');
+                if ($otherDepth2) {
+                    $otherDepth2.style.display = 'none';
+                }
+            });
+
+            // Open clicked item if it was closed
+            if (!isOpen) {
+                $item.classList.add('on');
+                $depth2.style.display = 'block';
+            }
+        });
+    });
+
+    // Depth-2 accordion
+    const $depth2Items = document.querySelectorAll('.lnb .depth-2 > li');
+
+    $depth2Items.forEach(($item) => {
+        const $link = $item.querySelector(':scope > a');
+        const $depth3 = $item.querySelector('.depth-3');
+
+        if (!$link || !$depth3) return;
+
+        $link.addEventListener('click', (e) => {
+            // Don't prevent default - allow navigation
+            // But toggle the accordion
+            const $parentDepth2 = $item.closest('.depth-2');
+            const isOpen = $item.classList.contains('on');
+
+            // Close all depth-2 items in the same parent
+            $parentDepth2.querySelectorAll(':scope > li').forEach(($otherItem) => {
+                $otherItem.classList.remove('on');
+                const $otherDepth3 = $otherItem.querySelector('.depth-3');
+                if ($otherDepth3) {
+                    $otherDepth3.style.display = 'none';
+                }
+            });
+
+            // Open clicked item
+            $item.classList.add('on');
+            $depth3.style.display = 'block';
+        });
+    });
+};
+
 const initLnbTabs = () => {
     const $lnbTabButtons = document.querySelectorAll('[data-tab-target]');
 
@@ -100,6 +164,7 @@ const initTabs = () => {
 // INIT
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
+    initLnbAccordion();
     initLnbTabs();
     initTabs();
 });

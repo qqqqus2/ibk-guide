@@ -4,83 +4,103 @@
 
 // PRIMARY COLOR
 $cl-black: #000;
-$cl-white: #FFF;
-$cl-primary: #2873E3;
+$cl-white: #fff;
+$cl-primary: #4393f0;
 
 // GRAY COLOR
-$cl-gr-100: #E1E3EA;
-$cl-gr-150: #D3D6DE;
-$cl-gr-200: #C5C8D3;
-$cl-gr-300: #B1B5C3;
-$cl-gr-400: #979BAA;
+$cl-gr-100: #e1e3ea;
+$cl-gr-150: #d3d6de;
+$cl-gr-200: #c5c8d3;
+$cl-gr-300: #b1b5c3;
+$cl-gr-400: #979baa;
 $cl-gr-500: #737684;
-$cl-gr-600: #5A5E6C;
+$cl-gr-600: #5a5e6c;
 $cl-gr-700: #454855;
-$cl-gr-800: #30323B;
+$cl-gr-800: #30323b;
 $cl-gr-900: #101116;
 
 // BLUE COLOR
-$cl-blue-50: #F3F9FF;
-$cl-blue-100: #E4F2FF;
-$cl-blue-150: #DBEEFF;
-$cl-blue-200: #C1E0FC;
-$cl-blue-300: #96CDFA;
-$cl-blue-400: #69AEFF;
-$cl-blue-500: #4393F0;
-$cl-blue-600: #2C74E4;
-$cl-blue-700: #235FD2;
-$cl-blue-800: #234EAA;
+$cl-blue-50: #f3f9ff;
+$cl-blue-100: #e4f2ff;
+$cl-blue-150: #dbeeff;
+$cl-blue-200: #c1e0fc;
+$cl-blue-300: #96cdfa;
+$cl-blue-400: #69aeff;
+$cl-blue-500: #4393f0;
+$cl-blue-600: #2c74e4;
+$cl-blue-700: #235fd2;
+$cl-blue-800: #234eaa;
 $cl-blue-850: #224486;
-$cl-blue-900: #2F3F5F;
-$cl-blue-1000: #2D3443;
+$cl-blue-900: #2f3f5f;
+$cl-blue-1000: #2d3443;
 
 // SEMANTIC COLOR
-$cl-blue: #1654D1;
-$cl-blue-light: #B6CAF3;
-$cl-red: #EE473D;
-$cl-red-light: #FAE1DF;
-$cl-orange: #C85000;
-$cl-orange-light: #F5E0D3;
+$cl-blue: #1654d1;
+$cl-blue-light: #b6caf3;
+$cl-red: #ee473d;
+$cl-red-light: #fae1df;
+$cl-orange: #c85000;
+$cl-orange-light: #f5e0d3;
 $cl-green: #158463;
-$cl-green-light: #E4F1ED;
+$cl-green-light: #e4f1ed;
 
 // TEXT COLOR
 $cl-title: #212121;
 $cl-sub-title: #111827;
 $cl-text-1: #374151;
-$cl-text-2: #4E4E4E;
-$cl-text-3: #6A7282;
-$cl-text-4: #9CA3AF;
+$cl-text-2: #4e4e4e;
+$cl-text-3: #6a7282;
+$cl-text-4: #9ca3af;
 
 // COMPONENT COLOR
-$cl-box-bg: #F3F4F7;
-$cl-border: #E5E7EB;
-$cl-table-header: #F3F9FF;
-
+$cl-box-bg: #f3f4f7;
+$cl-border: #e5e7eb;
+$cl-table-header: #f3f9ff;
 
 // =============================================================================
 // MARGIN & PADDING
 // =============================================================================
 
-$spaceamounts: (-20, 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 80, 100, 120);
+$spaceamounts: (
+    -20,
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    80,
+    100,
+    120
+);
 
 @each $space in $spaceamounts {
     //All around Margin
     .m-#{$space} {
-        margin: #{$space}px!important;
+        margin: #{$space}px !important;
     }
     //Margin
     .ml-#{$space} {
-        margin-left: #{$space}px!important;
+        margin-left: #{$space}px !important;
     }
     .mr-#{$space} {
-        margin-right: #{$space}px!important;
+        margin-right: #{$space}px !important;
     }
     .mt-#{$space} {
-        margin-top: #{$space}px!important;
+        margin-top: #{$space}px !important;
     }
     .mb-#{$space} {
-        margin-bottom: #{$space}px!important;
+        margin-bottom: #{$space}px !important;
     }
 
     //All around Padding
@@ -89,13 +109,13 @@ $spaceamounts: (-20, 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60
     }
     //Padding
     .pl-#{$space} {
-        padding-left: #{$space}px!important;
+        padding-left: #{$space}px !important;
     }
     .pr-#{$space} {
-        padding-right: #{$space}px!important;
+        padding-right: #{$space}px !important;
     }
     .pt-#{$space} {
-        padding-top: #{$space}px!important;
+        padding-top: #{$space}px !important;
     }
 
     // Gap
