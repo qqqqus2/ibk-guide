@@ -1,473 +1,1306 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IBK UX Writing 가이드 : UX Writing 원칙</title>
     <meta name="title" content="IBK UX Writing 가이드 : UX Writing 원칙" />
     <meta name="author" content="하이유엑스컨설팅(하이UX)" />
-    <meta name="description" content="고객이 금융 정보를 쉽게 이해하고, 상황에 맞게 판단하며, 다음 행동을 명확히 알 수 있도록 돕습니다." />
-    <meta name="keyword" content="IBK, IBK기업은행, UX Writing, UX 라이팅, UX 컨설팅, 하이유엑스컨설팅, 하이UX컨설팅" />
+    <meta
+      name="description"
+      content="고객이 금융 정보를 쉽게 이해하고, 상황에 맞게 판단하며, 다음 행동을 명확히 알 수 있도록 돕습니다."
+    />
+    <meta
+      name="keyword"
+      content="IBK, IBK기업은행, UX Writing, UX 라이팅, UX 컨설팅, 하이유엑스컨설팅, 하이UX컨설팅"
+    />
     <meta name="format-detection" content="telephone=no" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:type" content="website" />
     <meta property="og:author" content="하이유엑스컨설팅(하이UX)" />
-    <meta property="og:title" content="IBK UX Writing 가이드 : UX Writing 원칙" />
-    <meta property="og:site_name" content="IBK UX Writing 가이드 : UX Writing 원칙" />
-    <meta property="og:description" content="고객이 금융 정보를 쉽게 이해하고, 상황에 맞게 판단하며, 다음 행동을 명확히 알 수 있도록 돕습니다." />
+    <meta
+      property="og:title"
+      content="IBK UX Writing 가이드 : UX Writing 원칙"
+    />
+    <meta
+      property="og:site_name"
+      content="IBK UX Writing 가이드 : UX Writing 원칙"
+    />
+    <meta
+      property="og:description"
+      content="고객이 금융 정보를 쉽게 이해하고, 상황에 맞게 판단하며, 다음 행동을 명확히 알 수 있도록 돕습니다."
+    />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="IBK UX Writing 가이드 : UX Writing 원칙" />
-    <meta name="twitter:description" content="고객이 금융 정보를 쉽게 이해하고, 상황에 맞게 판단하며, 다음 행동을 명확히 알 수 있도록 돕습니다." />
-    <meta name="apple-mobile-web-app-title" content="IBK UX Writing 가이드 : UX Writing 원칙" />
-    <meta name="application-name" content="IBK UX Writing 가이드 : UX Writing 원칙" />
+    <meta
+      name="twitter:title"
+      content="IBK UX Writing 가이드 : UX Writing 원칙"
+    />
+    <meta
+      name="twitter:description"
+      content="고객이 금융 정보를 쉽게 이해하고, 상황에 맞게 판단하며, 다음 행동을 명확히 알 수 있도록 돕습니다."
+    />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="IBK UX Writing 가이드 : UX Writing 원칙"
+    />
+    <meta
+      name="application-name"
+      content="IBK UX Writing 가이드 : UX Writing 원칙"
+    />
 
     <link rel="stylesheet" type="text/css" href="../src/styles/css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrap" class="wrap">
-        <!-- [HEADER] -->
-        <header class="header">
-            <div class="logo">
-                <img src="../src/images/icon/logo.png" alt="IBK기업은행 로고" /> 
-            </div>
-            <div class="search-box">
-                <div class="input-box">
-                    <input type="text" />
-                </div>
-                <button type="button" class="search-btn">내용 찾기</button>
-            </div>
-        </header>
-        <!-- // [HEADER] -->
+      <!-- [HEADER] -->
+      <header class="header">
+        <div class="logo">
+          <!-- <img src="../src/images/icon/logo.png" alt="IBK기업은행 로고" /> -->
+        </div>
+        <div class="search-box">
+          <div class="input-box">
+            <input type="text" />
+          </div>
+          <button type="button" class="search-btn">내용 찾기</button>
+        </div>
+      </header>
+      <!-- // [HEADER] -->
 
-        <!-- [CONTAINER] -->
-        <main class="container">
-            <!-- LNB -->
-            <aside class="lnb" aria-label="사이트 내비게이션">
-                <nav class="nav">
-                    <ul class="depth-1">
-                        <li class="on">
-                            <a href="#" class="ux-guide">UX Writing 가이드</a>
-                            <ul class="depth-2">
-                                <li>
-                                    <a href="concept.html" class="ux-concept">IBK UX Writing의 이해</a>
-                                    <ul class="depth-3">
-                                        <li><button type="button" data-tab-target="conceptPage_tabBtn_1">UX Writing이란?</button></li>
-                                        <li><button type="button" data-tab-target="conceptPage_tabBtn_2">IBK기업은행의 언어</button></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="rule.html" class="ux-rule">UX Writing 원칙</a>
-                                    <ul class="depth-3">
-                                        <li><button type="button" data-tab-target="rulePage_tabBtn_1">개요</button></li>
-                                        <li><button type="button" data-tab-target="rulePage_tabBtn_2">쉽게쓰기</button></li>
-                                        <li><button type="button" data-tab-target="rulePage_tabBtn_3">판단돕기</button></li>
-                                        <li><button type="button" data-tab-target="rulePage_tabBtn_4">안내하기</button></li>
-                                        <li><button type="button" data-tab-target="rulePage_tabBtn_5">맞춰 전달하기</button></li>
-                                    </ul>
-                                </li>
-                                <li class="on">
-                                    <a href="voice.html" class="voice">보이스 & 톤</a>
-                                    <ul class="depth-3">
-                                        <li class="active"><button type="button" data-tab-target="voicePage_tabBtn_1">개요</button></li>
-                                        <li><button type="button" data-tab-target="voicePage_tabBtn_2">보이스</button></li>
-                                        <li><button type="button" data-tab-target="voicePage_tabBtn_3">톤</button></li>
-                                        <li><button type="button" data-tab-target="voicePage_tabBtn_4">톤 상세</button></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/" class="how-write">컴포넌트별 작성법</a></li>
-                            </ul>
-                        </li>
+      <!-- [CONTAINER] -->
+      <main class="container">
+        <!-- LNB -->
+        <aside class="lnb" aria-label="사이트 내비게이션">
+          <nav class="nav">
+            <ul class="depth-1">
+              <li class="on">
+                <a href="#" class="ux-guide">UX Writing 가이드</a>
+                <ul class="depth-2">
+                  <li>
+                    <a href="concept.html" class="ux-concept"
+                      >IBK UX Writing의 이해</a
+                    >
+                    <ul class="depth-3">
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="conceptPage_tabBtn_1"
+                        >
+                          UX Writing이란?
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="conceptPage_tabBtn_2"
+                        >
+                          IBK기업은행의 언어
+                        </button>
+                      </li>
                     </ul>
-                </nav>
-                <div class="help">
-                    <a href="/">도움말 및 문의</a>
-                </div>
-            </aside>
-            <!-- // LNB -->
-            <!-- CONTENTS -->
-            <div class="content concept" aria-label="UX Writing 원칙 콘텐츠">
-                <div class="page-title-box">
-                    <span class="sub-tit">IBK UX Writing 가이드</span>
-                    <h1 class="page-tit">보이스&톤</h1>
-                </div>
-                <div class="page__tab">
-                    <div class="page__tab-list" role="tablist" aria-label="페이지 탭">
-                        <button type="button" class="tab-btn" role="tab" id="voicePage_tabBtn_1" aria-controls="voicePage_tabPanel_1" aria-selected="true">개요</button>
-                        <button type="button" class="tab-btn" role="tab" id="voicePage_tabBtn_2" aria-controls="voicePage_tabPanel_2" aria-selected="false">보이스</button>
-                        <button type="button" class="tab-btn" role="tab" id="voicePage_tabBtn_3" aria-controls="voicePage_tabPanel_3" aria-selected="false">톤</button>
-                        <button type="button" class="tab-btn" role="tab" id="voicePage_tabBtn_4" aria-controls="voicePage_tabPanel_4" aria-selected="false">톤 상세</button>
-                    </div>
-                    <div class="page-tabs__cnt">
-                        <!-- TAB : 개요 -->
-                        <div class="page-tabs__panel" role="tabpanel" id="voicePage_tabPanel_1" aria-labelledby="voicePage_tabBtn_1" tabindex="0">
-                            <div class="cnt-box">
-                                <h2 class="cnt-tit">보이스는 <span>유지</span>하고, 톤은 상황에 맞게 <span>조절</span>합니다</h2>
-                                <p>IBK의 말투와 태도는 일관되게 유지하되, 고객 상황과 과업 맥락에 맞추어 표현 방식을 조정합니다[1].</p>
-                                <div class="voice__summary-top">
-                                    <div class="grid repeat-2 gap-20">
-                                        <div class="box unchange">
-                                            <span class="type">변하지 않는 것</span>
-                                            <h3 class="title">
-                                                보이스
-                                                <span>Voice</span>
-                                            </h3>
-                                            <p class="desc">IBK가 고객을 대하는 일관된 말투와 태도</p>
-                                            <ul>
-                                                <li>
-                                                    <strong>책임있는</strong>
-                                                    <p>사실과 명확한 기준으로 신중하게 말하기</p>
-                                                </li>
-                                                <li>
-                                                    <strong>함께하는</strong>
-                                                    <p>고객이 과정을 끝까지 이어갈 수 있도록 함께하기</p>
-                                                </li>
-                                                <li>
-                                                    <strong>배려하는</strong>
-                                                    <p>고객의 상황과 부담을 고려해 차분하게 말하기</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="box change">
-                                            <span class="type">상황에 따라 달라지는 것</span>
-                                            <h3 class="title">
-                                                톤
-                                                <span>Tone</span>
-                                            </h3>
-                                            <p class="desc">고객 상황과 화면 목적에 따라 조절하는 표현 방식</p>
-                                            <ul>
-                                                <li>
-                                                    <strong>믿음직한</strong>
-                                                    <p>고객이 안심하고 판단할 수 있게 말하는 톤</p>
-                                                </li>
-                                                <li>
-                                                    <strong>명료한</strong>
-                                                    <p>필요한 내용을 빠르고 분명하게 전하는 톤</p>
-                                                </li>
-                                                <li>
-                                                    <strong>유용한</strong>
-                                                    <p>고객에게 필요한 제안을 자연스럽게 전달하는 톤</p>
-                                                </li>
-                                                <li>
-                                                    <strong>친절한</strong>
-                                                    <p>이해하기 쉽게 풀어 설명하는 톤</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cnt-box">
-                                <h2 class="cnt-tit">보이스&톤이 필요한 이유</h2>
-                                <p>모든 화면과 채널에서 일관된 말하기 기준을 유지해, 고객이 금융 정보를 쉽게 이해하고 다음 행동을 안심하고 이어갈 수 있도록 돕습니다[2].</p>
-                                <div class="voice__summary-why">
-                                    <div class="grid repeat-2 border">
-                                        <div class="box">
-                                            <strong>일관된 IBK 경험</strong>
-                                            <p>
-                                                채널과 화면이 달라도 IBK다운 말투와 태도를 유지해 <br />
-                                                일관된 경험으로 느낄 수 있게 합니다.
-                                            </p>
-                                        </div>
-                                        <div class="box">
-                                            <strong>쉽고 명확한 업무 안내</strong>
-                                            <p>
-                                                복잡한 금융 정보와 절차를 쉽고 명확하게 전달해 <br />
-                                                고객이 다음 행동을 자연스럽게 이어갈 수 있도록 돕습니다.
-                                            </p>
-                                        </div>
-                                        <div class="box">
-                                            <strong>불안과 실수 예방</strong>
-                                            <p>
-                                                인증, 오류, 이체 같은 민감한 상황에서도 <br />
-                                                고객이 안심하고 진행할 수 있도록 안내합니다.
-                                            </p>
-                                        </div>
-                                        <div class="box">
-                                            <strong>상황에 맞는 표현 제공</strong>
-                                            <p>
-                                                안내, 오류, 완료, 혜택 등 상황과 목적에 따라 <br />
-                                                정보 밀도와 표현 강도를 조절합니다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cnt-box">
-                                <h2 class="cnt-tit">적용 방법</h2>
-                                <p>화면의 상황을 먼저 판단한 뒤, 보이스 기준은 유지하고 적절한 톤을 선택해 메시지로 구체화합니다.</p>
-                                <div class="voice__summary-how">
-                                    <ol class="grid repeat-4 gap-36">
-                                        <li class="box">
-                                            <strong>상황 판단</strong>
-                                            <p>고객이 확인해야 할 정보와 행동을 파악합니다.</p>
-                                        </li>
-                                        <li class="box">
-                                            <strong>IBK 보이스 적용</strong>
-                                            <p>IBK의 보이스가 문구 전반에 유지되는지 확인합니다.</p>
-                                        </li>
-                                        <li class="box">
-                                            <strong>톤 선택</strong>
-                                            <p>상황의 목적과 민감도에 따라 강조할 톤을 선택합니다.</p>
-                                        </li>
-                                        <li class="box">
-                                            <strong>메시지 작성</strong>
-                                            <p>문구를 작성한 뒤, 보이스와 톤 기준에 맞는지 확인합니다.</p>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="cnt-box">
-                                <h2 class="cnt-tit">IBK 페르소나</h2>
-                                <p>
-                                    페르소나는 IBK의 말투와 태도를 구체화한 기준입니다. <br />
-                                    “믿음직한 금융 길잡이”는 복잡한 금융 업무를 고객이 쉽게 이해하고 완료할 수 있도록, 필요한 정보와 절차를 차분하게 안내합니다.
-                                </p>
-                                <div class="voice__summary-persona">
-                                    <h3 class="title">
-                                        고객이 함께하는 <span>믿음직한 금융 길잡이</span>
-                                    </h3>
-                                    <div class="flex-row">
-                                        <div class="left">
-                                            <div class="box">
-                                                <strong>성격</strong>
-                                                <ul class="dot-list">
-                                                    <li>차분하고 단정하게 말합니다.</li>
-                                                    <li>신중하고 책임감 있게 안내합니다.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="box">
-                                                <strong>업무 스타일</strong>
-                                                <ul class="dot-list">
-                                                    <li>핵심 정보를 먼저 파악하고 배치합니다.</li>
-                                                    <li>복잡한 내용은 쉽게 풀어 설명합니다.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="box">
-                                                <strong>고객 응대 방식</strong>
-                                                <ul class="dot-list">
-                                                    <li>헷갈릴 수 있는 부분을 먼저 안내합니다.</li>
-                                                    <li>원인, 해결 방법, 다음 행동을 제시합니다.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <div class="box good">
-                                                <strong class="type">선호하는 표현</strong>
-                                                <ul class="dot-list">
-                                                    <li>확인된 정보와 기준으로 고객이 신뢰할 수 있게 설명합니다.</li>
-                                                    <li>조건, 금액, 기간, 결과를 구체적으로 보여줍니다.</li>
-                                                    <li>다음 행동은 분명히 안내하고, 같은 의미는 같은 용어로 표현합니다.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="box bad">
-                                                <strong class="type">피하는 표현</strong>
-                                                <ul class="dot-list">
-                                                    <li>원인, 기준, 다음 행동이 안내되지 않아 고객이 판단하기 어려운 표현</li>
-                                                    <li>내부 용어나 개발 용어처럼 고객이 이해하기 어려운 표현</li>
-                                                    <li>과하게 가볍거나 혜택만 강조해 조건을 충분히 확인하기 어려운 표현</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="reference-box">
-                                <ol>
-                                    <li>[1] Moran, K. (2016). The four dimensions of tone of voice. Nielsen Norman Group. <a href="https://www.nngroup.com/articles/tone-of-voice-dimensions/" target="_blank">https://www.nngroup.com/articles/tone-of-voice-dimensions/</a></li>
-                                    <li>[2] Nielsen, J. (1994). 10 usability heuristics for user interface design. Nielsen Norman Group. <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">https://www.nngroup.com/articles/ten-usability-heuristics/</a></li>
-                                </ol>
-                            </div>
-                        </div>
-
-                        <div class="page-tabs__panel" role="tabpane2" id="voicePage_tabPanel_2" aria-labelledby="voicePage_tabBtn_1" tabindex="0">
-                            <div class="cnt-box">
-                                <h2 class="cnt-tit">보이스는 IBK가 고객을 대하는 일관된 말투와 태도</h2>
-                                <p>대한민국 기업과 고객의 경제활동을 돕는 금융 길잡이로서, IBK기업은행은 고객이 정보를 이해하고 필요한 과정을 안심하고 이어갈 수 있도록 안내합니다. IBK기업은행은 책임 있게 말하고, 필요한 과정을 함께 안내하며, 고객의 부담을 배려합니다[1-5].</p>
-                                <div class="voice__summary-top">
-                                    <div class="grid repeat-2 gap-20">
-                                        <div class="box unchange">
-                                            <span class="type">변하지 않는 것</span>
-                                            <h3 class="title">
-                                                책임있는
-                                            </h3>
-                                            <p class="desc">IBK가 고객을 대하는 일관된 말투와 태도</p>
-                                            <ul>
-                                                <li>
-                                                    <strong>책임있는</strong>
-                                                    <p>사실과 명확한 기준으로 신중하게 말하기</p>
-                                                </li>
-                                                <li>
-                                                    <strong>함께하는</strong>
-                                                    <p>고객이 과정을 끝까지 이어갈 수 있도록 함께하기</p>
-                                                </li>
-                                                <li>
-                                                    <strong>배려하는</strong>
-                                                    <p>고객의 상황과 부담을 고려해 차분하게 말하기</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="box change">
-                                            <span class="type">상황에 따라 달라지는 것</span>
-                                            <h3 class="title">
-                                                톤
-                                                <span>Tone</span>
-                                            </h3>
-                                            <p class="desc">고객 상황과 화면 목적에 따라 조절하는 표현 방식</p>
-                                            <ul>
-                                                <li>
-                                                    <strong>믿음직한</strong>
-                                                    <p>고객이 안심하고 판단할 수 있게 말하는 톤</p>
-                                                </li>
-                                                <li>
-                                                    <strong>명료한</strong>
-                                                    <p>필요한 내용을 빠르고 분명하게 전하는 톤</p>
-                                                </li>
-                                                <li>
-                                                    <strong>유용한</strong>
-                                                    <p>고객에게 필요한 제안을 자연스럽게 전달하는 톤</p>
-                                                </li>
-                                                <li>
-                                                    <strong>친절한</strong>
-                                                    <p>이해하기 쉽게 풀어 설명하는 톤</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cnt-box">
-                                <h2 class="cnt-tit">보이스&톤이 필요한 이유</h2>
-                                <p>모든 화면과 채널에서 일관된 말하기 기준을 유지해, 고객이 금융 정보를 쉽게 이해하고 다음 행동을 안심하고 이어갈 수 있도록 돕습니다[2].</p>
-                                <div class="voice__summary-why">
-                                    <div class="grid repeat-2 border">
-                                        <div class="box">
-                                            <strong>일관된 IBK 경험</strong>
-                                            <p>
-                                                채널과 화면이 달라도 IBK다운 말투와 태도를 유지해 <br />
-                                                일관된 경험으로 느낄 수 있게 합니다.
-                                            </p>
-                                        </div>
-                                        <div class="box">
-                                            <strong>쉽고 명확한 업무 안내</strong>
-                                            <p>
-                                                복잡한 금융 정보와 절차를 쉽고 명확하게 전달해 <br />
-                                                고객이 다음 행동을 자연스럽게 이어갈 수 있도록 돕습니다.
-                                            </p>
-                                        </div>
-                                        <div class="box">
-                                            <strong>불안과 실수 예방</strong>
-                                            <p>
-                                                인증, 오류, 이체 같은 민감한 상황에서도 <br />
-                                                고객이 안심하고 진행할 수 있도록 안내합니다.
-                                            </p>
-                                        </div>
-                                        <div class="box">
-                                            <strong>상황에 맞는 표현 제공</strong>
-                                            <p>
-                                                안내, 오류, 완료, 혜택 등 상황과 목적에 따라 <br />
-                                                정보 밀도와 표현 강도를 조절합니다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cnt-box">
-                                <h2 class="cnt-tit">적용 방법</h2>
-                                <p>화면의 상황을 먼저 판단한 뒤, 보이스 기준은 유지하고 적절한 톤을 선택해 메시지로 구체화합니다.</p>
-                                <div class="voice__summary-how">
-                                    <ol class="grid repeat-4 gap-36">
-                                        <li class="box">
-                                            <strong>상황 판단</strong>
-                                            <p>고객이 확인해야 할 정보와 행동을 파악합니다.</p>
-                                        </li>
-                                        <li class="box">
-                                            <strong>IBK 보이스 적용</strong>
-                                            <p>IBK의 보이스가 문구 전반에 유지되는지 확인합니다.</p>
-                                        </li>
-                                        <li class="box">
-                                            <strong>톤 선택</strong>
-                                            <p>상황의 목적과 민감도에 따라 강조할 톤을 선택합니다.</p>
-                                        </li>
-                                        <li class="box">
-                                            <strong>메시지 작성</strong>
-                                            <p>문구를 작성한 뒤, 보이스와 톤 기준에 맞는지 확인합니다.</p>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="cnt-box">
-                                <h2 class="cnt-tit">IBK 페르소나</h2>
-                                <p>
-                                    페르소나는 IBK의 말투와 태도를 구체화한 기준입니다. <br />
-                                    “믿음직한 금융 길잡이”는 복잡한 금융 업무를 고객이 쉽게 이해하고 완료할 수 있도록, 필요한 정보와 절차를 차분하게 안내합니다.
-                                </p>
-                                <div class="voice__summary-persona">
-                                    <h3 class="title">
-                                        고객이 함께하는 <span>믿음직한 금융 길잡이</span>
-                                    </h3>
-                                    <div class="flex-row">
-                                        <div class="left">
-                                            <div class="box">
-                                                <strong>성격</strong>
-                                                <ul class="dot-list">
-                                                    <li>차분하고 단정하게 말합니다.</li>
-                                                    <li>신중하고 책임감 있게 안내합니다.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="box">
-                                                <strong>업무 스타일</strong>
-                                                <ul class="dot-list">
-                                                    <li>핵심 정보를 먼저 파악하고 배치합니다.</li>
-                                                    <li>복잡한 내용은 쉽게 풀어 설명합니다.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="box">
-                                                <strong>고객 응대 방식</strong>
-                                                <ul class="dot-list">
-                                                    <li>헷갈릴 수 있는 부분을 먼저 안내합니다.</li>
-                                                    <li>원인, 해결 방법, 다음 행동을 제시합니다.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <div class="box good">
-                                                <strong class="type">선호하는 표현</strong>
-                                                <ul class="dot-list">
-                                                    <li>확인된 정보와 기준으로 고객이 신뢰할 수 있게 설명합니다.</li>
-                                                    <li>조건, 금액, 기간, 결과를 구체적으로 보여줍니다.</li>
-                                                    <li>다음 행동은 분명히 안내하고, 같은 의미는 같은 용어로 표현합니다.</li>
-                                                </ul>
-                                            </div>
-                                            <div class="box bad">
-                                                <strong class="type">피하는 표현</strong>
-                                                <ul class="dot-list">
-                                                    <li>원인, 기준, 다음 행동이 안내되지 않아 고객이 판단하기 어려운 표현</li>
-                                                    <li>내부 용어나 개발 용어처럼 고객이 이해하기 어려운 표현</li>
-                                                    <li>과하게 가볍거나 혜택만 강조해 조건을 충분히 확인하기 어려운 표현</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="reference-box">
-                                <ol>
-                                    <li>[1] Moran, K. (2016). The four dimensions of tone of voice. Nielsen Norman Group. <a href="https://www.nngroup.com/articles/tone-of-voice-dimensions/" target="_blank">https://www.nngroup.com/articles/tone-of-voice-dimensions/</a></li>
-                                    <li>[2] Nielsen, J. (1994). 10 usability heuristics for user interface design. Nielsen Norman Group. <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">https://www.nngroup.com/articles/ten-usability-heuristics/</a></li>
-                                </ol>
-                            </div>
-                        </div>
-                        <!-- // TAB : 개요 -->
-                    </div>
-                </div>
+                  </li>
+                  <li>
+                    <a href="rule.html" class="ux-rule">UX Writing 원칙</a>
+                    <ul class="depth-3">
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="rulePage_tabBtn_1"
+                        >
+                          개요
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="rulePage_tabBtn_2"
+                        >
+                          쉽게쓰기
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="rulePage_tabBtn_3"
+                        >
+                          판단돕기
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="rulePage_tabBtn_4"
+                        >
+                          안내하기
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="rulePage_tabBtn_5"
+                        >
+                          맞춰 전달하기
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="on">
+                    <a href="voice.html" class="voice">보이스 & 톤</a>
+                    <ul class="depth-3">
+                      <li class="active">
+                        <button
+                          type="button"
+                          data-tab-target="voicePage_tabBtn_1"
+                        >
+                          개요
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="voicePage_tabBtn_2"
+                        >
+                          보이스
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="voicePage_tabBtn_3"
+                        >
+                          톤
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          type="button"
+                          data-tab-target="voicePage_tabBtn_4"
+                        >
+                          톤 상세
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="/" class="how-write">컴포넌트별 작성법</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="help">
+            <a href="/">도움말 및 문의</a>
+          </div>
+        </aside>
+        <!-- // LNB -->
+        <!-- CONTENTS -->
+        <div class="content concept" aria-label="UX Writing 원칙 콘텐츠">
+          <div class="page-title-box">
+            <span class="sub-tit">IBK UX Writing 가이드</span>
+            <h1 class="page-tit">보이스&톤</h1>
+          </div>
+          <div class="page__tab">
+            <div class="page__tab-list" role="tablist" aria-label="페이지 탭">
+              <button
+                type="button"
+                class="tab-btn"
+                role="tab"
+                id="voicePage_tabBtn_1"
+                aria-controls="voicePage_tabPanel_1"
+                aria-selected="true"
+              >
+                개요
+              </button>
+              <button
+                type="button"
+                class="tab-btn"
+                role="tab"
+                id="voicePage_tabBtn_2"
+                aria-controls="voicePage_tabPanel_2"
+                aria-selected="false"
+              >
+                보이스
+              </button>
+              <button
+                type="button"
+                class="tab-btn"
+                role="tab"
+                id="voicePage_tabBtn_3"
+                aria-controls="voicePage_tabPanel_3"
+                aria-selected="false"
+              >
+                톤
+              </button>
+              <button
+                type="button"
+                class="tab-btn"
+                role="tab"
+                id="voicePage_tabBtn_4"
+                aria-controls="voicePage_tabPanel_4"
+                aria-selected="false"
+              >
+                톤 상세
+              </button>
             </div>
-            <!-- // CONTENTS -->
-        </main>
-        <!-- // [CONTAINER] -->
+            <div class="page-tabs__cnt">
+              <!-- TAB : 개요 -->
+              <div
+                class="page-tabs__panel"
+                role="tabpanel"
+                id="voicePage_tabPanel_1"
+                aria-labelledby="voicePage_tabBtn_1"
+                tabindex="0"
+                hidden
+              >
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">
+                    보이스는 <span>유지</span>하고, 톤은 상황에 맞게
+                    <span>조절</span>합니다
+                  </h2>
+                  <p>
+                    IBK의 말투와 태도는 일관되게 유지하되, 고객 상황과 과업
+                    맥락에 맞추어 표현 방식을 조정합니다[1].
+                  </p>
+                  <div class="voice__summary-top">
+                    <div class="grid repeat-2 gap-20">
+                      <div class="box unchange">
+                        <span class="type">변하지 않는 것</span>
+                        <h3 class="title">
+                          보이스
+                          <span>Voice</span>
+                        </h3>
+                        <p class="desc">
+                          IBK가 고객을 대하는 일관된 말투와 태도
+                        </p>
+                        <ul>
+                          <li>
+                            <strong>책임있는</strong>
+                            <p>사실과 명확한 기준으로 신중하게 말하기</p>
+                          </li>
+                          <li>
+                            <strong>함께하는</strong>
+                            <p>
+                              고객이 과정을 끝까지 이어갈 수 있도록 함께하기
+                            </p>
+                          </li>
+                          <li>
+                            <strong>배려하는</strong>
+                            <p>고객의 상황과 부담을 고려해 차분하게 말하기</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="box change">
+                        <span class="type">상황에 따라 달라지는 것</span>
+                        <h3 class="title">
+                          톤
+                          <span>Tone</span>
+                        </h3>
+                        <p class="desc">
+                          고객 상황과 화면 목적에 따라 조절하는 표현 방식
+                        </p>
+                        <ul>
+                          <li>
+                            <strong>믿음직한</strong>
+                            <p>고객이 안심하고 판단할 수 있게 말하는 톤</p>
+                          </li>
+                          <li>
+                            <strong>명료한</strong>
+                            <p>필요한 내용을 빠르고 분명하게 전하는 톤</p>
+                          </li>
+                          <li>
+                            <strong>유용한</strong>
+                            <p>고객에게 필요한 제안을 자연스럽게 전달하는 톤</p>
+                          </li>
+                          <li>
+                            <strong>친절한</strong>
+                            <p>이해하기 쉽게 풀어 설명하는 톤</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">보이스&톤이 필요한 이유</h2>
+                  <p>
+                    모든 화면과 채널에서 일관된 말하기 기준을 유지해, 고객이
+                    금융 정보를 쉽게 이해하고 다음 행동을 안심하고 이어갈 수
+                    있도록 돕습니다[2].
+                  </p>
+                  <div class="voice__summary-why">
+                    <div class="grid repeat-2 border">
+                      <div class="box">
+                        <strong>일관된 IBK 경험</strong>
+                        <p>
+                          채널과 화면이 달라도 IBK다운 말투와 태도를 유지해
+                          <br />
+                          일관된 경험으로 느낄 수 있게 합니다.
+                        </p>
+                      </div>
+                      <div class="box">
+                        <strong>쉽고 명확한 업무 안내</strong>
+                        <p>
+                          복잡한 금융 정보와 절차를 쉽고 명확하게 전달해 <br />
+                          고객이 다음 행동을 자연스럽게 이어갈 수 있도록
+                          돕습니다.
+                        </p>
+                      </div>
+                      <div class="box">
+                        <strong>불안과 실수 예방</strong>
+                        <p>
+                          인증, 오류, 이체 같은 민감한 상황에서도 <br />
+                          고객이 안심하고 진행할 수 있도록 안내합니다.
+                        </p>
+                      </div>
+                      <div class="box">
+                        <strong>상황에 맞는 표현 제공</strong>
+                        <p>
+                          안내, 오류, 완료, 혜택 등 상황과 목적에 따라 <br />
+                          정보 밀도와 표현 강도를 조절합니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">적용 방법</h2>
+                  <p>
+                    화면의 상황을 먼저 판단한 뒤, 보이스 기준은 유지하고 적절한
+                    톤을 선택해 메시지로 구체화합니다.
+                  </p>
+                  <div class="voice__summary-how">
+                    <ol class="grid repeat-4 gap-36">
+                      <li class="box">
+                        <span>01</span>
+                        <strong>상황 판단</strong>
+                        <p>고객이 확인해야 할 정보와 행동을 파악합니다.</p>
+                      </li>
+                      <li class="box">
+                        <span>02</span>
+                        <strong>IBK 보이스 적용</strong>
+                        <p>IBK의 보이스가 문구 전반에 유지되는지 확인합니다.</p>
+                      </li>
+                      <li class="box">
+                        <span>03</span>
+                        <strong>톤 선택</strong>
+                        <p>
+                          상황의 목적과 민감도에 따라 강조할 톤을 선택합니다.
+                        </p>
+                      </li>
+                      <li class="box">
+                        <span>04</span>
+                        <strong>메시지 작성</strong>
+                        <p>
+                          문구를 작성한 뒤, 보이스와 톤 기준에 맞는지
+                          확인합니다.
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">IBK 페르소나</h2>
+                  <p>
+                    페르소나는 IBK의 말투와 태도를 구체화한 기준입니다. <br />
+                    “믿음직한 금융 길잡이”는 복잡한 금융 업무를 고객이 쉽게
+                    이해하고 완료할 수 있도록, 필요한 정보와 절차를 차분하게
+                    안내합니다.
+                  </p>
+                  <div class="voice__summary-persona">
+                    <div class="title-box">
+                      <span>고객과 함께하는</span>
+                      <h3 class="title">믿음직한 금융 길잡이</h3>
+                    </div>
+                    <div class="flex-row">
+                      <div class="left">
+                        <div class="box">
+                          <strong>성격</strong>
+                          <ul class="dot-list">
+                            <li>차분하고 단정하게 말합니다.</li>
+                            <li>신중하고 책임감 있게 안내합니다.</li>
+                          </ul>
+                        </div>
+                        <div class="box">
+                          <strong>업무 스타일</strong>
+                          <ul class="dot-list">
+                            <li>핵심 정보를 먼저 파악하고 배치합니다.</li>
+                            <li>복잡한 내용은 쉽게 풀어 설명합니다.</li>
+                          </ul>
+                        </div>
+                        <div class="box">
+                          <strong>고객 응대 방식</strong>
+                          <ul class="dot-list">
+                            <li>헷갈릴 수 있는 부분을 먼저 안내합니다.</li>
+                            <li>원인, 해결 방법, 다음 행동을 제시합니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="box good">
+                          <strong class="type">선호하는 표현</strong>
+                          <ul class="dot-list">
+                            <li>
+                              확인된 정보와 기준으로 고객이 신뢰할 수 있게
+                              설명합니다.
+                            </li>
+                            <li>
+                              조건, 금액, 기간, 결과를 구체적으로 보여줍니다.
+                            </li>
+                            <li>
+                              다음 행동은 분명히 안내하고, 같은 의미는 같은
+                              용어로 표현합니다.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="box bad">
+                          <strong class="type">피하는 표현</strong>
+                          <ul class="dot-list">
+                            <li>
+                              원인, 기준, 다음 행동이 안내되지 않아 고객이
+                              판단하기 어려운 표현
+                            </li>
+                            <li>
+                              내부 용어나 개발 용어처럼 고객이 이해하기 어려운
+                              표현
+                            </li>
+                            <li>
+                              과하게 가볍거나 혜택만 강조해 조건을 충분히
+                              확인하기 어려운 표현
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reference-box">
+                  <ol>
+                    <li>
+                      [1] Moran, K. (2016). The four dimensions of tone of
+                      voice. Nielsen Norman Group.
+                      <a
+                        href="https://www.nngroup.com/articles/tone-of-voice-dimensions/"
+                        target="_blank"
+                        >https://www.nngroup.com/articles/tone-of-voice-dimensions/</a
+                      >
+                    </li>
+                    <li>
+                      [2] Nielsen, J. (1994). 10 usability heuristics for user
+                      interface design. Nielsen Norman Group.
+                      <a
+                        href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+                        target="_blank"
+                        >https://www.nngroup.com/articles/ten-usability-heuristics/</a
+                      >
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <!-- // TAB : 개요 -->
+              <!-- TAB : 보이스 -->
+              <div
+                class="page-tabs__panel"
+                role="tabpanel2"
+                id="voicePage_tabPanel_2"
+                aria-labelledby="voicePage_tabBtn_2"
+                tabindex="-1"
+                hidden
+              >
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">
+                    보이스는 IBK가 고객을 대하는 일관된 말투와 태도
+                  </h2>
+                  <p>
+                    대한민국 기업과 고객의 경제활동을 돕는 금융 길잡이로서,
+                    IBK기업은행은 고객이 정보를 이해하고 필요한 과정을 안심하고
+                    이어갈 수 있도록 안내합니다. IBK기업은행은 책임 있게 말하고,
+                    필요한 과정을 함께 안내하며, 고객의 부담을 배려합니다[1-5].
+                  </p>
+                  <div class="voice__voice-top">
+                    <div class="flex-row gap-20">
+                      <div class="top-box">
+                        <div class="bg-box">
+                          <span></span>
+                          <h3>책임있는</h3>
+                          <div class="badge-box">
+                            <span>정확성</span>
+                            <span>기준 제시</span>
+                            <span>오해 방지</span>
+                          </div>
+                        </div>
+                        <div class="list-box">
+                          <ul class="dot-list">
+                            <li>확인된 정보와 기준으로 전달합니다.</li>
+                            <li>기준과 조건을 분명히 작성합니다.</li>
+                            <li>같은 의미는 같은 용어로 표현합니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="top-box">
+                        <div class="bg-box">
+                          <span></span>
+                          <h3>함께하는</h3>
+                          <div class="badge-box">
+                            <span>흐름 유지</span>
+                            <span>판단 지원</span>
+                            <span>다음 행동</span>
+                          </div>
+                        </div>
+                        <div class="list-box">
+                          <ul class="dot-list">
+                            <li>현재 단계와 남은 절차를 안내합니다.</li>
+                            <li>판단에 필요한 기준과 영향을 제시합니다.</li>
+                            <li>다음 단계를 명확히 설명합니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="top-box">
+                        <div class="bg-box">
+                          <span></span>
+                          <h3>배려하는</h3>
+                          <div class="badge-box">
+                            <span>쉬운 설명</span>
+                            <span>안심</span>
+                            <span>회복 지원</span>
+                          </div>
+                        </div>
+                        <div class="list-box">
+                          <ul class="dot-list">
+                            <li>고객의 부담을 고려해 말합니다.</li>
+                            <li>오류나 불안 상황도 차분하게 안내합니다.</li>
+                            <li>어려운 절차를 쉽게 설명합니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cnt-box">
+                  <h3 class="cnt-sub-title">책임있는</h3>
+                  <p>
+                    정해진 기준과 사실을 바탕으로 정보를 신중하게 전달합니다.
+                  </p>
+                  <div class="voice__voice-detail">
+                    <span class="detail-badge">적용 방식</span>
+                    <ul class="dot-list">
+                      <li>추측이나 과장 없이 확인된 정보만 전달합니다.</li>
+                      <li>
+                        금액, 조건, 기간, 결과처럼 중요한 정보는 다르게 해석되지
+                        않도록 명확히 작성합니다.
+                      </li>
+                      <li>
+                        같은 의미는 화면과 채널이 달라도 일관된 기준으로
+                        표현합니다.
+                      </li>
+                    </ul>
+                    <div class="img-wrap">
+                      <div class="dont img-box">
+                        <span>Don't</span>
+                        <img
+                          src="../src/images/img/img-voice-1-1.png"
+                          alt="제한 대상이 모호해 고객이 가입 가능 여부를 판단하기 어려운 화면 예시"
+                        />
+                        <p>
+                          제한 대상이 모호해 고객이<br />
+                          가입 가능 여부를 판단하기 어려움
+                        </p>
+                      </div>
+                      <div class="do img-box">
+                        <span>Do</span>
+                        <img
+                          src="../src/images/img/img-voice-1-2.png"
+                          alt="제한 대상을 구체적으로 안내해 가입 가능 여부를
+                          바로 알 수 있는 화면 예시"
+                        />
+                        <p>
+                          제한 대상을 구체적으로 안내해<br />가입 가능 여부를
+                          바로 알 수 있음
+                        </p>
+                      </div>
+                    </div>
+                    <div class="img-wrap">
+                      <div class="dont img-box">
+                        <span>Don't</span>
+                        <img
+                          src="../src/images/img/img-voice-1-3.png"
+                          alt="할인 기준이 모호해 혜택 적용 여부를 판단하기
+                          어려운 화면 예시"
+                        />
+                        <p>
+                          할인 기준이 모호해 혜택 적용 여부를 <br />판단하기
+                          어려움
+                        </p>
+                      </div>
+                      <div class="do img-box">
+                        <span>Do</span>
+                        <img
+                          src="../src/images/img/img-voice-1-4.png"
+                          alt="  조건과 한도를 구체적으로 안내해 혜택 기준을
+                          정확히 알 수 있는 화면 예시"
+                        />
+                        <p>
+                          조건과 한도를 구체적으로 안내해<br />혜택 기준을
+                          정확히 알 수 있음
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cnt-box">
+                  <h3 class="cnt-sub-title">함께하는</h3>
+                  <p>
+                    고객이 복잡한 과정에서 흐름을 놓치지 않고, 필요한 일을
+                    끝까지 이어갈 수 있도록 안내합니다.
+                  </p>
+                  <div class="voice__voice-detail">
+                    <span class="detail-badge">적용 방식</span>
+                    <ul class="dot-list">
+                      <li>
+                        고객이 지금 어디에 있고 무엇을 해야 하는지 알려줍니다.
+                      </li>
+                      <li>
+                        판단 기준과 다음 행동을 가까운 위치에 함께 제시합니다.
+                      </li>
+                      <li>
+                        단계가 이어지는 과정에서는 다음 절차와 영향, 예상 결과를
+                        미리 안내합니다.
+                      </li>
+                    </ul>
+                    <div class="img-wrap">
+                      <div class="dont img-box">
+                        <span>Don't</span>
+                        <img
+                          src="../src/images/img/img-voice-1-5.png"
+                          alt="등록 후 변경이나 취소가 가능한지 알기 어려워 예약하기 전 부담이 남을 수 있는 화면 예시"
+                        />
+                        <p>
+                          등록 후 변경이나 취소가 가능한지<br />알기 어려워
+                          예약하기 전 부담이 남을 수 있음
+                        </p>
+                      </div>
+                      <div class="do img-box">
+                        <span>Do</span>
+                        <img
+                          src="../src/images/img/img-voice-1-6.png"
+                          alt="변경, 취소 가능 여부를 함께 안내해 고객이 안심하고 등록할 수 있는 화면 예시"
+                        />
+                        <p>
+                          변경, 취소 가능 여부를 함께 안내해<br />
+                          고객이 안심하고 등록할 수 있음
+                        </p>
+                      </div>
+                    </div>
+                    <div class="img-wrap">
+                      <div class="dont img-box">
+                        <span>Don't</span>
+                        <img
+                          src="../src/images/img/img-voice-1-7.png"
+                          alt="선택지의 차이와 영향을 알기 어려워 고객이 스스로 판단하기 어려운 화면 예시"
+                        />
+                        <p>
+                          선택지의 차이와 영향을 알기 어려워<br />고객이 스스로
+                          판단하기 어려움
+                        </p>
+                      </div>
+                      <div class="do img-box">
+                        <span>Do</span>
+                        <img
+                          src="../src/images/img/img-voice-1-8.png"
+                          alt=" 각 선택지의 영향을 함께 안내해 고객이 상황에 맞게 결정할 수 있는 화면 예시"
+                        />
+                        <p>
+                          각 선택지의 영향을 함께 안내해<br />고객이 상황에 맞게
+                          결정할 수 있음
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cnt-box">
+                  <h3 class="cnt-sub-title">배려하는</h3>
+                  <p>고객의 상황과 부담을 고려해 차분하게 말합니다.</p>
+                  <div class="voice__voice-detail">
+                    <span class="detail-badge">적용 방식</span>
+                    <ul class="dot-list">
+                      <li>
+                        고객이 불안하거나 막막할 수 있는 상황에서는 현재 상태와
+                        이유를 차분하게 설명합니다.
+                      </li>
+                      <li>
+                        실패나 제한 상황은 고객 탓으로 느껴지지 않게 말하고,
+                        가능한 해결 방법을 함께 제시합니다.
+                      </li>
+                      <li>
+                        낯선 절차나 어려운 정보는 쉬운 표현과 순서로 풀어, 부담
+                        없이 받아들일 수 있도록 합니다.
+                      </li>
+                    </ul>
+                    <div class="img-wrap">
+                      <div class="dont img-box">
+                        <span>Don't</span>
+                        <img
+                          src="../src/images/img/img-voice-1-9.png"
+                          alt="알림 동의가 혜택을 받기 위한 필수 조건처럼 보여 고객에게 부담을 줄 수 있는 화면 예시"
+                        />
+                        <p>
+                          알림 동의가 혜택을 받기 위한<br />필수 조건처럼 보여
+                          고객에게 부담을 줄 수 있음
+                        </p>
+                      </div>
+                      <div class="do img-box">
+                        <span>Do</span>
+                        <img
+                          src="../src/images/img/img-voice-1-10.png"
+                          alt="알림을 받는 이유와 상황을 먼저 안내해 고객이 필요에 따라 선택할 수 있는 화면 예시"
+                        />
+                        <p>
+                          알림을 받는 이유와 상황을 먼저 안내해<br />
+                          고객이 필요에 따라 선택할 수 있음
+                        </p>
+                      </div>
+                    </div>
+                    <div class="img-wrap">
+                      <div class="dont img-box">
+                        <span>Don't</span>
+                        <img
+                          src="../src/images/img/img-voice-1-11.png"
+                          alt="변경 결과만 안내해, 언제부터 새 계좌가 적용되는지 알기 어려운 화면 예시"
+                        />
+                        <p>
+                          변경 결과만 안내해, 언제부터 새 계좌가<br />
+                          적용되는지 알기 어려움
+                        </p>
+                      </div>
+                      <div class="do img-box">
+                        <span>Do</span>
+                        <img
+                          src="../src/images/img/img-voice-1-12.png"
+                          alt="이번 회차와 다음 회차를 구분해 안내하여, 변경 시점을 쉽게 이해할 수 있도록 돕는 화면 예시"
+                        />
+                        <p>
+                          이번 회차와 다음 회차를 구분해 안내하여,<br />
+                          변경 시점을 쉽게 이해할 수 있도록 도움
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">작성 전 확인 포인트</h2>
+                  <p>모든 화면의 문구가 IBK기업은행 보이스 기준에 맞나요?</p>
+                  <div class="board-list">
+                    <ul>
+                      <li>확인된 기준과 정보로 신중하게 작성했나요?</li>
+                      <li>
+                        고객이 과정을 끝까지 이어갈 수 있도록 다음 행동을
+                        안내했나요?
+                      </li>
+                      <li>
+                        중요한 업무를 안심하고 진행할 수 있도록 확인 정보와
+                        안내를 제공했나요?
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="reference-box">
+                  <ol>
+                    <li>
+                      [1] Aaker, J. L. (1997). Dimensions of brand personality.
+                      Journal of Marketing Research, 34(3), 347–356.
+                    </li>
+                    <li>
+                      [2] Nielsen, J. (1994). Enhancing the explanatory power of
+                      usability heuristics. Proceedings of the SIGCHI Conference
+                      on Human Factors in Computing Systems.
+                    </li>
+                    <li>
+                      [3] Grice, H. P. (1975). Logic and conversation. In Speech
+                      acts (pp. 41-58). Brill.
+                    </li>
+                    <li>
+                      [4] Bandura, A. (1977). Self-efficacy: Toward a unifying
+                      theory of behavioral change. Psychological Review, 84(2),
+                      191–215.
+                    </li>
+                    <li>
+                      [5] Parasuraman, A. B. L. L., Valarie A. Zeithaml, and
+                      Leonard Berry. "SERVQUAL: A multiple-item scale for
+                      measuring consumer perceptions of service
+                      quality." 1988 64.1 (1988):
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <!-- // TAB : 보이스 -->
+              <!-- TAB : 톤 -->
+              <div
+                class="page-tabs__panel"
+                role="tabpanel3"
+                id="voicePage_tabPanel_3"
+                aria-labelledby="voicePage_tabBtn_3"
+                tabindex="-2"
+              >
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">
+                    고객 상황과 화면 목적에 따라 조절하는 IBK의 표현 방식
+                  </h2>
+                  <p>
+                    톤은 고객의 상황과 업무 목적에 따라 달라지는 IBK기업은행의
+                    표현 방식입니다.<br />
+                    정보를 빠르게 전달해야 할 때, 충분한 설명이 필요할 때,
+                    고객의 판단과 확인을 도와야 할 때에 따라 표현의 강도와 정보
+                    밀도를 조절합니다[1-4].
+                  </p>
+                  <div class="voice__tone-top">
+                    <div class="grid repeat-2 gap-32 mt-40">
+                      <div class="top-box">
+                        <div class="bg-box">
+                          <h3>믿음직한</h3>
+                          <p>고객이 안심하고 판단할 수 있게 말하는 톤</p>
+                        </div>
+                        <div class="list-box">
+                          <p class="list-tit">필요한 상황</p>
+                          <ul class="dot-list">
+                            <li>실수나 오해의 영향이 큰 화면</li>
+                          </ul>
+                          <p class="list-tit">적용 방식</p>
+                          <ul class="dot-list">
+                            <li>
+                              불안을 유발하기보다 차분하고 안정감 있게
+                              안내합니다.
+                            </li>
+                            <li>
+                              고객이 놓치면 안 되는 조건, 결과, 다음 행동을 함께
+                              설명합니다.
+                            </li>
+                          </ul>
+                          <p class="list-tit">주요 적용 상황</p>
+                          <ul class="dot-list">
+                            <li>
+                              오류, 인증 실패, 고액 이체, 중요거래 전 확인 등
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="top-box">
+                        <div class="bg-box">
+                          <h3>명료한</h3>
+                          <p>필요한 내용을 빠르고 분명하게 전하는 톤</p>
+                        </div>
+                        <div class="list-box">
+                          <p class="list-tit">필요한 상황</p>
+                          <ul class="dot-list">
+                            <li>빠르게 이해하고 처리해야 하는 화면</li>
+                          </ul>
+                          <p class="list-tit">적용 방식</p>
+                          <ul class="dot-list">
+                            <li>
+                              고객이 빠르게 핵심을 이해할 수 있도록 작성합니다.
+                            </li>
+                            <li>
+                              불필요한 수식보다 명확한 정보 전달을 우선합니다.
+                            </li>
+                          </ul>
+                          <p class="list-tit">주요 적용 상황</p>
+                          <ul class="dot-list">
+                            <li>이체 완료, 거래 상태, 로그인, 인증/알림 등</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="top-box">
+                        <div class="bg-box">
+                          <h3>유용한</h3>
+                          <p>고객에게 필요한 혜택을 자연스럽게 전달하는 톤</p>
+                        </div>
+                        <div class="list-box">
+                          <p class="list-tit">필요한 상황</p>
+                          <ul class="dot-list">
+                            <li>혜택, 가입, 참여를 유도하는 화면</li>
+                          </ul>
+                          <p class="list-tit">적용 방식</p>
+                          <ul class="dot-list">
+                            <li>
+                              혜택과 장점은 명확히 제안하되, 과장된 표현은
+                              사용하지 않습니다.
+                            </li>
+                            <li>
+                              고객에게 필요한 제안을 적절히 더해 행동으로
+                              자연스럽게 연결합니다.
+                            </li>
+                          </ul>
+                          <p class="list-tit">주요 적용 상황</p>
+                          <ul class="dot-list">
+                            <li>
+                              혜택 안내, 상품 추천, 이벤트, 마케팅 발송 메시지
+                              등
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="top-box">
+                        <div class="bg-box">
+                          <h3>친절한</h3>
+                          <p>이해하기 쉽게 풀어 설명하는 톤</p>
+                        </div>
+                        <div class="list-box">
+                          <p class="list-tit">필요한 상황</p>
+                          <ul class="dot-list">
+                            <li>낯선 정보나 절차를 설명하는 화면</li>
+                          </ul>
+                          <p class="list-tit">적용 방식</p>
+                          <ul class="dot-list">
+                            <li>
+                              고객이 부담없이 이해할 수 있도록 금융 용어와
+                              절차를 쉽게 설명합니다.
+                            </li>
+                            <li>
+                              어려운 정보는 익숙한 표현과 예시로 풀어
+                              전달합니다.
+                            </li>
+                          </ul>
+                          <p class="list-tit">주요 적용 상황</p>
+                          <ul class="dot-list">
+                            <li>
+                              상품 탐색, 금융 용어 설명, 대출 조건 비교,
+                              약관/절차 안내 등
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">톤 속성 진단</h2>
+                  <p>
+                    닐슨노먼그룹의 4가지 톤 속성 모델을 바탕으로, 각 톤의 표현
+                    성향과 상황별 적용 방향을 확인합니다[5].<br />이를 기준으로
+                    고객 상황과 업무 목적에 맞게 말의 강도와 정보 밀도를
+                    조절합니다.
+                  </p>
+                  <div class="voice__tone-diagnosis">
+                    <div class="common-table mt-40">
+                      <table>
+                        <colgroup>
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>표현속성</th>
+                            <th>믿음직한</th>
+                            <th>명료한</th>
+                            <th>유용한</th>
+                            <th>친절한</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>진지함</td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>격식 있는</td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>존중하는</td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>열정적인</td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="circle-box">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>
+                      *파란 원이 많을수록 해당 톤에서 표현 속성이 강하게
+                      나타남을 의미합니다.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">톤 조합</h2>
+                  <p>
+                    화면의 목적에 맞는 기본 톤을 먼저 정하고, 고객 상황에 따라
+                    필요한 보조 톤을 더해 표현을 조정합니다.
+                  </p>
+                  <div class="voice__tone-mixture">
+                    <div class="mixture-box">
+                      <div class="box">
+                        <span>기본 톤</span>
+                        <p>문구 방향 설정</p>
+                      </div>
+                      <span class="sign"></span>
+                      <div class="box">
+                        <span>기본 톤</span>
+                        <p>문구 방향 설정</p>
+                      </div>
+                      <span class="sign"></span>
+                      <div class="box">
+                        <span>기본 톤</span>
+                        <p>문구 방향 설정</p>
+                      </div>
+                    </div>
+                    <div class="step-box">
+                      <div class="box">
+                        <strong>1</strong>
+                        <p>기본 톤을 먼저 정합니다</p>
+                        <span
+                          >화면의 주된 목적을 확인하고<br />문구의 기본 방향을
+                          설정합니다.</span
+                        >
+                      </div>
+                      <div class="box">
+                        <strong>2</strong>
+                        <p>필요한 톤을 더합니다</p>
+                        <span
+                          >고객 상황에 따라 보조 톤을 선택합니다.<br />필요한
+                          경우 여러 톤을 함께 적용합니다.</span
+                        >
+                      </div>
+                      <div class="box">
+                        <strong>3</strong>
+                        <p>상황에 맞게 조정합니다</p>
+                        <span
+                          >기본 방향은 유지하면서 상황에 맞게<br />정보량과 표현
+                          강도를 조정합니다.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cnt-box">
+                  <h2 class="cnt-tit">작성 예시</h2>
+                  <p>
+                    화면의 주 목적에 맞는 기본 톤을 먼저 정하고, 고객의 상태나
+                    행동 목표에 따라 보조 톤을 조합해서 사용할 수 있습니다.
+                  </p>
+                  <div class="voice__tone-guide">
+                    <div class="img-wrap">
+                      <div class="img-box">
+                        <div class="badge-box">
+                          <span>유용한</span> + 친절한
+                        </div>
+                        <img
+                          src="../src/images/img/img-voice-2-1.png"
+                          alt="유용한 + 친절한 조합예시"
+                        />
+                        <dl>
+                          <dt>유용한</dt>
+                          <dd>고객의 판단에 필요한 정보를 먼저 제안</dd>
+                        </dl>
+                        <dl>
+                          <dt>친절한</dt>
+                          <dd>부담될 수 있는 조건은 쉽게 풀어 설명</dd>
+                        </dl>
+                      </div>
+                      <div class="img-box">
+                        <div class="badge-box">
+                          <span>명료한</span> + 믿음직한
+                        </div>
+                        <img
+                          src="../src/images/img/img-voice-2-2.png"
+                          alt="명료한 + 믿음직한 조합예시"
+                        />
+
+                        <dl>
+                          <dt>명료한</dt>
+                          <dd>현재 상태와 필요한 행동을 바로 알림</dd>
+                        </dl>
+                        <dl>
+                          <dt>믿음직한</dt>
+                          <dd>처리 기준과 결과를 알려 안심하게 함</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reference-box">
+                  <ol>
+                    <li>
+                      [1] Aaker, J. L. (1997). Dimensions of brand personality.
+                      Journal of Marketing Research, 34(3), 347–356.
+                    </li>
+                    <li>
+                      [2] Nielsen, J. (1994). Enhancing the explanatory power of
+                      usability heuristics. Proceedings of the SIGCHI Conference
+                      on Human Factors in Computing Systems.
+                    </li>
+                    <li>
+                      [3] Grice, H. P. (1975). Logic and conversation. In Speech
+                      acts (pp. 41-58). Brill.
+                    </li>
+                    <li>
+                      [4] Bandura, A. (1977). Self-efficacy: Toward a unifying
+                      theory of behavioral change. Psychological Review, 84(2),
+                      191–215.
+                    </li>
+                    <li>
+                      [5] Parasuraman, A. B. L. L., Valarie A. Zeithaml, and
+                      Leonard Berry. "SERVQUAL: A multiple-item scale for
+                      measuring consumer perceptions of service
+                      quality." 1988 64.1 (1988):
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <!-- // TAB : 톤 -->
+            </div>
+          </div>
+        </div>
+        <!-- // CONTENTS -->
+      </main>
+      <!-- // [CONTAINER] -->
     </div>
 
     <script src="../src/js/main.js"></script>
-</body>
+  </body>
 </html>
