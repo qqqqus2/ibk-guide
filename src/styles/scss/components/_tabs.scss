@@ -1,43 +1,66 @@
 .page__tab {
+  width: 100%;
+  position: relative;
+  &-list {
     width: 100%;
     position: relative;
-    &-list {
+    @include flex(row, flex-start, flex-start, 60px);
+    border-bottom: 1px solid $cl-border;
+
+    .tab-btn {
+      width: fit-content;
+      height: 56px;
+      position: relative;
+      @include flex(row, center, center, 0);
+      @include font(14px, 400, 1.28);
+      color: #767676;
+      &::after {
+        content: "";
         width: 100%;
-        position: relative;
-        @include flex(row, flex-start, flex-start, 60px);
-        border-bottom: 1px solid $cl-border;
-        margin-bottom: 80px;
-        .tab-btn {
-            width: fit-content;
-            height: 56px;
-            position: relative;
-            @include flex(row, center, center, 0);
-            @include font(14px, 400, 1.28);
-            color: #767676;
-            &::after {
-                content: "";
-                width: 100%;
-                height: 3px;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                background-color: $cl-blue-500;
-                display: none;
-            }
-            &[aria-selected="true"] {
-                color: $cl-black;
-                font-weight: 600;
-                &::after {
-                    display: block;
-                }
-            }
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $cl-blue-500;
+        display: none;
+      }
+      &[aria-selected="true"] {
+        color: $cl-black;
+        font-weight: 600;
+        &::after {
+          display: block;
         }
+      }
     }
-    &__panel {
-        width: 100%;
-        position: relative;
-        &[hidden] {
-            display: none;
-        }
+  }
+  &__panel {
+    width: 100%;
+    position: relative;
+    &[hidden] {
+      display: none;
     }
+  }
+  &-sublist {
+    position: relative;
+    width: 100%;
+    margin: 32px 0 38px;
+    @include flex(row, flex-start, flex-start, 11px);
+    .tab-btn {
+      width: 80px;
+      height: 32px;
+      position: relative;
+      @include flex(row, center, center, 0);
+      @include font(14px, 500, 18px);
+      letter-spacing: -0.75px;
+      border: 1px solid #c5c8d3;
+      border-radius: 48px;
+      color: #4a5565;
+      &[aria-selected="true"] {
+        color: #fff;
+        font-weight: 600;
+        background-color: #4393f0;
+        border: none;
+      }
+    }
+  }
 }

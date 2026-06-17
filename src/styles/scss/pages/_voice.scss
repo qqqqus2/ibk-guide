@@ -7,28 +7,7 @@
   @include font(24px, 700, 140%);
   color: #171717;
 }
-.board-list {
-  margin-top: 40px;
-  border-top: 1px solid #c5c8d3;
-  border-bottom: 1px solid #c5c8d3;
-  li {
-    @include flex(row, center, flex-start);
-    gap: 14px;
-    padding: 20px 18px;
-    @include font(16px, 400, 24px);
-    color: #212121;
-    & + li {
-      border-top: 1px solid #f3f4f6;
-    }
-    &:before {
-      content: "";
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.002 22C17.5248 22 22.002 17.5228 22.002 12C22.002 6.47715 17.5248 2 12.002 2C6.47911 2 2.00195 6.47715 2.00195 12C2.00195 17.5228 6.47911 22 12.002 22Z' stroke='%232873E3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9 12L11 14L15 10' stroke='%232873E3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-    }
-  }
-}
+
 .voice {
   &__summary {
     &-top {
@@ -96,7 +75,7 @@
             @include flex(row, center, flex-start);
             width: 100%;
             padding: 30px 32px;
-            background-color: #ffffff;
+            background-color: $cl-white;
             border-radius: 9px;
             strong {
               width: 88px;
@@ -246,7 +225,7 @@
                 height: 32px;
                 background-repeat: no-repeat;
                 background-position: center;
-                background-color: #fff;
+                background-color: $cl-white;
                 background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z' stroke='%232873E3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9 12L11 14L15 10' stroke='%232873E3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
                 border-radius: 100%;
                 box-shadow: 0px 1px 2px -1px #0000001a;
@@ -308,7 +287,7 @@
           display: inline-block;
           width: 52px;
           height: 52px;
-          background-color: #fff;
+          background-color: $cl-white;
           background-repeat: no-repeat;
           background-position: center;
           border-radius: 100%;
@@ -326,10 +305,10 @@
           span {
             display: inline-block;
             padding: 5px 10px;
-            background-color: #fff;
+            background-color: $cl-white;
             border-radius: 8px;
             @include font(14px, 700, 18px);
-            color: #4e4e4e;
+            color: $cl-text-2;
           }
         }
       }
@@ -337,7 +316,7 @@
         padding: 28px 21px;
         li {
           @include font(16px, 400, 23px);
-          color: #212121;
+          color: $cl-title;
           & + li {
             margin-top: 6px;
           }
@@ -350,13 +329,13 @@
         border-radius: 4px;
         background-color: #f1f5f9;
         @include font(16px, 600, 21px);
-        color: #212121;
+        color: $cl-title;
       }
       .dot-list {
         margin-top: 16px;
         li {
           @include font(16px, 400, 23px);
-          color: #212121;
+          color: $cl-title;
           & + li {
             margin-top: 16px;
           }
@@ -366,7 +345,7 @@
         @include flex(row, center, space-between);
         margin-top: 28px;
         padding: 44px 0;
-        background-color: #f3f4f7;
+        background-color: $cl-box-bg;
         border-radius: 20px;
         & + .img-wrap {
           margin-top: 40px;
@@ -381,7 +360,7 @@
             background-color: #fce5e4;
             border-radius: 16px;
             @include font(14px, 600, 25px);
-            color: #212121;
+            color: $cl-title;
             &::before {
               content: "";
               width: 16px;
@@ -402,7 +381,7 @@
           p {
             text-align: center;
             @include font(16px, 400, 23px);
-            color: #4e4e4e;
+            color: $cl-text-2;
           }
         }
       }
@@ -434,7 +413,7 @@
         p {
           margin-top: 11px;
           @include font(18px, 500, 24px);
-          color: #4e4e4e;
+          color: $cl-text-2;
         }
       }
       .list-box {
@@ -446,11 +425,11 @@
         .list-tit {
           margin-bottom: 3px;
           @include font(16px, 600, 24px);
-          color: #212121;
+          color: $cl-title;
         }
         li {
           @include font(16px, 400, 23px);
-          color: #212121;
+          color: $cl-title;
           & + li {
             margin-top: 6px;
           }
@@ -464,13 +443,13 @@
           @include font(18px, 600, 25px);
           &:first-child {
             @include font(18px, 400, 25px);
-            color: #5a5e6c;
+            color: $cl-gr-600;
           }
         }
         tbody td {
           padding-block: 30px;
           @include font(18px, 400, 25px);
-          color: #212121;
+          color: $cl-title;
           border: none;
           text-align: center;
           .circle-box {
@@ -491,7 +470,7 @@
           margin-top: 10px;
           text-align: right;
           @include font(16px, 400, 24px);
-          color: #737684;
+          color: $cl-gr-500;
         }
       }
     }
@@ -520,9 +499,9 @@
             color: #2873e3;
           }
           &:nth-of-type(2) {
-            background-color: #fff;
+            background-color: $cl-white;
             p {
-              color: #111827;
+              color: $cl-sub-title;
             }
           }
         }
@@ -546,7 +525,7 @@
           padding: 25px;
           border: 1px solid #e2e8f0;
           border-radius: 20px;
-          color: #212121;
+          color: $cl-title;
           strong {
             @include flex(row, center, center);
             width: 32px;
@@ -575,17 +554,17 @@
         .img-box {
           flex: 1;
           padding: 32px;
-          background-color: #f3f4f7;
+          background-color: $cl-box-bg;
           border-radius: 20px;
           .badge-box {
             display: inline-block;
             padding: 7px 15px;
             border-radius: 55px;
-            background-color: #e4f1ed;
+            background-color: $cl-green-light;
             @include font(20px, 700, 100%);
-            color: #2d3443;
+            color: $cl-blue-1000;
             span {
-              color: #158463;
+              color: $cl-green;
             }
           }
           img {
@@ -601,10 +580,10 @@
             @include font(16px, 500, 20px);
             dt {
               font-weight: 700;
-              color: #212121;
+              color: $cl-title;
             }
             dd {
-              color: #4e4e4e;
+              color: $cl-text-2;
             }
             & + dl {
               margin-top: 10px;
@@ -617,6 +596,121 @@
                 width: 71px;
               }
             }
+          }
+        }
+      }
+    }
+  }
+  &__detail {
+    &-top {
+      .gray-box {
+        padding: 24px 20px;
+        border-radius: 15px;
+        background-color: $cl-box-bg;
+        .badge {
+          padding: 6px 10px;
+          background-color: $cl-white;
+          border-radius: 6px;
+          @include font(16px, 600, 21px);
+          color: $cl-title;
+        }
+        .dot-list {
+          margin-top: 14px;
+          li {
+            @include font(16px, 400, 23px);
+            color: $cl-text-2;
+            & + li {
+              margin-top: 11px;
+            }
+          }
+        }
+      }
+    }
+    &-rule {
+      .rule-box {
+        @include flex(column, flex-start, space-between);
+        padding: 25px;
+        border: 1px solid #e2e8f0;
+        border-radius: 20px;
+        strong {
+          @include flex(row, center, center);
+          width: 32px;
+          height: 32px;
+          font-family: Inter;
+          @include font(14px, 700, 21px);
+          background-color: #eff6ff;
+          border-radius: 100%;
+          color: #2873e3;
+        }
+        p {
+          margin-top: 14px;
+          @include font(20px, 600, 28px);
+        }
+        span {
+          margin-top: 25px;
+          @include font(16px, 400, 23px);
+          color: $cl-text-2;
+        }
+        .dot-list {
+          margin-top: 14px;
+          li {
+            @include font(16px, 400, 23px);
+            color: $cl-text-2;
+            & + li {
+              margin-top: 11px;
+            }
+          }
+        }
+      }
+      &.avoid {
+        .rule-box {
+          strong {
+            background-color: $cl-red-light;
+            color: $cl-red;
+          }
+        }
+      }
+      .img-wrap {
+        @include flex(row, center, space-between);
+        margin-top: 4px;
+        padding: 44px 0;
+        background-color: $cl-box-bg;
+        border-radius: 20px;
+        & + .img-wrap {
+          margin-top: 40px;
+        }
+        .img-box {
+          flex: 1;
+          @include flex(column, center, space-between);
+          span {
+            @include flex(row, center, center);
+            gap: 12px;
+            padding: 3.5px 18.5px;
+            background-color: #fce5e4;
+            border-radius: 16px;
+            @include font(14px, 600, 25px);
+            color: $cl-title;
+            &::before {
+              content: "";
+              width: 16px;
+              height: 16px;
+              background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4L4 12M4 4L12 12' stroke='%23212121' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            }
+          }
+          &.do span {
+            background-color: #bdf4e9;
+            &::before {
+              background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3337 4L6.00033 11.3333L2.66699 8' stroke='%23212121' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            }
+          }
+          img {
+            width: fit-content;
+            object-fit: contain;
+          }
+          p {
+            text-align: center;
+            @include font(16px, 400, 23px);
+            color: $cl-text-2;
           }
         }
       }
