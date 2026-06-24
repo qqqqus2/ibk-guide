@@ -353,6 +353,7 @@
         .img-box {
           flex: 1;
           @include flex(column, center, space-between);
+          gap: 24px;
           span {
             @include flex(row, center, center);
             gap: 12px;
@@ -377,6 +378,7 @@
           img {
             width: fit-content;
             object-fit: contain;
+            box-shadow: 0px 3.59px 21.48px 0px #0000000f;
           }
           p {
             text-align: center;
@@ -569,8 +571,9 @@
           }
           img {
             width: fit-content;
-            margin: 0 auto;
+            margin: 24px auto;
             object-fit: contain;
+            box-shadow: 0px 3.59px 21.48px 0px #0000000f;
           }
 
           dl {
@@ -682,6 +685,7 @@
         .img-box {
           flex: 1;
           @include flex(column, center, space-between);
+          gap: 20px;
           span {
             @include flex(row, center, center);
             gap: 12px;
@@ -706,6 +710,7 @@
           img {
             width: fit-content;
             object-fit: contain;
+            box-shadow: 0px 3.59px 21.48px 0px #0000000f;
           }
           p {
             text-align: center;
