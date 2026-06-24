@@ -24,7 +24,7 @@
           }
         }
         &.change {
-          background-color: $cl-box-bg;
+          background-color: #fbfcff;
           .type {
             background: #d8d8d8
               url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.0007 2.66699H9.33398' stroke='%234E4E4E' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.66667 2.66699H2' stroke='%234E4E4E' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14 8H8' stroke='%234E4E4E' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.33333 8H2' stroke='%234E4E4E' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.9993 13.333H10.666' stroke='%234E4E4E' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 13.333H2' stroke='%234E4E4E' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.33398 1.33301V3.99967' stroke='%234E4E4E' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.33398 6.66699V9.33366' stroke='%234E4E4E' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.666 12V14.6667' stroke='%234E4E4E' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
@@ -151,7 +151,7 @@
         padding: 39px 45px;
         @include flex(column, flex-start, flex-start);
         border-radius: 32px;
-        background-color: $cl-blue-50;
+        background-color: #f3f9ff;
         span {
           @include font(24px, 700, 140%);
           color: $cl-title;
@@ -213,7 +213,7 @@
           .box {
             padding: 43px 41px;
             padding-bottom: 48px;
-            background-color: $cl-box-bg;
+            background-color: #fbfcff;
             border-radius: 24px;
             .type {
               @include flex(row, center, flex-start);
@@ -345,7 +345,7 @@
         @include flex(row, center, space-between);
         margin-top: 28px;
         padding: 44px 0;
-        background-color: $cl-box-bg;
+        background-color: #fbfcff;
         border-radius: 20px;
         & + .img-wrap {
           margin-top: 40px;
@@ -554,7 +554,7 @@
         .img-box {
           flex: 1;
           padding: 32px;
-          background-color: $cl-box-bg;
+          background-color: #fbfcff;
           border-radius: 20px;
           .badge-box {
             display: inline-block;
@@ -606,7 +606,7 @@
       .gray-box {
         padding: 24px 20px;
         border-radius: 15px;
-        background-color: $cl-box-bg;
+        background-color: #fbfcff;
         .badge {
           padding: 6px 10px;
           background-color: $cl-white;
@@ -674,7 +674,7 @@
         @include flex(row, center, space-between);
         margin-top: 4px;
         padding: 44px 0;
-        background-color: $cl-box-bg;
+        background-color: #fbfcff;
         border-radius: 20px;
         & + .img-wrap {
           margin-top: 40px;

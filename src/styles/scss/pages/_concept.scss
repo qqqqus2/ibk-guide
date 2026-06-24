@@ -1,503 +1,504 @@
 .concept {
-    &__work {
-        width: 100%;
-        position: relative;
-        margin-top: 40px;
-        .grid {
-            .box {
-                strong {
-                    display: block;
-                    position: relative;
-                    @include font(20px, 600, 1.4);
-                    color: $cl-sub-title;
-                    margin-bottom: 6px;
-                    padding-top: 32px;
-                    &::before {
-                        content: '';
-                        width: 24px;
-                        height: 24px;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        @include bg-set;
-                    }
-                }
-                p {
-                    @include font(18px, 400, 1.3);
-                    color: $cl-text-2;
-                }
-                &.ux {
-                    background-color: #F3F9FF;
-                    strong {
-                        color: $cl-primary;
-                        &::before {
-                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M17.4167 2.75H4.58333C3.57081 2.75 2.75 3.57081 2.75 4.58333V17.4167C2.75 18.4292 3.57081 19.25 4.58333 19.25H17.4167C18.4292 19.25 19.25 18.4292 19.25 17.4167V4.58333C19.25 3.57081 18.4292 2.75 17.4167 2.75Z' stroke='%232873E3' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2.75 8.25H19.25' stroke='%232873E3' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.25 19.25V8.25' stroke='%232873E3' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                        }
-                    }
-                }
-                &.ui {
-                    strong {
-                        &::before {
-                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M13.7501 1.83331H5.50008C5.01385 1.83331 4.54754 2.02647 4.20372 2.37028C3.8599 2.7141 3.66675 3.18042 3.66675 3.66665V18.3333C3.66675 18.8195 3.8599 19.2859 4.20372 19.6297C4.54754 19.9735 5.01385 20.1666 5.50008 20.1666H16.5001C16.9863 20.1666 17.4526 19.9735 17.7964 19.6297C18.1403 19.2859 18.3334 18.8195 18.3334 18.3333V6.41665L13.7501 1.83331Z' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.8333 1.83331V5.49998C12.8333 5.98621 13.0264 6.45253 13.3702 6.79634C13.714 7.14016 14.1804 7.33331 14.6666 7.33331H18.3333' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.16659 8.25H7.33325' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.6666 11.9167H7.33325' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.6666 15.5833H7.33325' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                        }
-                    }
-                }
-                &.micro {
-                    strong {
-                        &::before {
-                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M16.6499 1.46532C17.0714 1.11404 17.6431 0.916687 18.2393 0.916687C18.8354 0.916687 19.4072 1.11404 19.8287 1.46532C20.2502 1.8166 20.4871 2.29304 20.4871 2.78983C20.4871 3.28662 20.2502 3.76306 19.8287 4.11434L7.11129 14.7131C6.85937 14.923 6.54798 15.0766 6.20593 15.1596L3.16476 15.899C3.07364 15.9212 2.97706 15.9225 2.88511 15.9029C2.79317 15.8833 2.70925 15.8434 2.64213 15.7875C2.57502 15.7315 2.52718 15.6616 2.50363 15.585C2.48007 15.5084 2.48166 15.4279 2.50824 15.3519L3.3956 12.8176C3.49537 12.5329 3.67965 12.2737 3.9314 12.064L16.6499 1.46532Z' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M0.916748 22.9167H22.9167' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                        }
-                    }
-                }
-            }
-        }
-    }
-    &__effect {
-        width: 100%;
-        position: relative;
-        margin-top: 40px;
-        .box {
-            position: relative;
-            padding: 20px 16px;
-            border-radius: 14px;
-            border: 1px solid $cl-border;
-            background-color: $cl-box-bg;
-            text-align: center;
-            strong {
-                @include font(18px, 600, 1.38);
-                color: $cl-title;
-            }
-            p {
-                margin-top: 8px;
-                @include font(16px, 400, 1.43);
-                color: $cl-text-2;
-                word-break: keep-all;
-            }
-            & + .box {
-                &::before {
-                    content: "";
-                    width: 15px;
-                    height: 22px;
-                    @include ps-icon;
-                    left: -17px;
-                    @include bg-set;
-                    background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.39062 9.9375L5.51562 9.09375L9.01562 5.59375H0V4.35938H9.01562L5.51562 0.859375L6.39062 0L11.3594 4.96875L6.39062 9.9375Z' fill='%234A5565'/%3E%3C/svg%3E%0A");
-                }
-            }
-        }
-    }
-    &__case {
-        position: relative;
-        margin-top: 8px;
-        padding: 32px 32px 64px;
-        border-radius: 24px;
-        background-color: $cl-box-bg;
-        @include flex(column, center, flex-start, 20px);
-        .grid {
-            width: fit-content;
-            gap: min(12vw, 188px);
-            .box {
-                width: fit-content;
-                padding: 24px;
-                @include flex(column, center, flex-start, 16px);
-                span {
-                    @include font(16px, 600, 1.5);
-                }
-                img {
-                    object-fit: contain;
-                }
-                &.before {
-                    span {
-                        color: $cl-red;
-                    }
-                }
-                &.after {
-                    span {
-                        color: $cl-green;
-                    }
-                }
-            }
-        }
+  &__work {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    .grid {
+      .box {
         strong {
-            @include font(18px, 600, 1.38);
-            color: $cl-black;
-            text-align: center;
+          display: block;
+          position: relative;
+          @include font(20px, 600, 1.4);
+          color: $cl-sub-title;
+          margin-bottom: 6px;
+          padding-top: 32px;
+          &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include bg-set;
+          }
         }
         p {
-            @include font(18px, 400, 1.38);
-            color: #696969;
-            position: absolute;
-            right: 28px;
-            bottom: 20px;
+          @include font(18px, 400, 1.3);
+          color: $cl-text-2;
+        }
+        &.ux {
+          background-color: #f3f9ff;
+          strong {
+            color: $cl-primary;
+            &::before {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M17.4167 2.75H4.58333C3.57081 2.75 2.75 3.57081 2.75 4.58333V17.4167C2.75 18.4292 3.57081 19.25 4.58333 19.25H17.4167C18.4292 19.25 19.25 18.4292 19.25 17.4167V4.58333C19.25 3.57081 18.4292 2.75 17.4167 2.75Z' stroke='%232873E3' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2.75 8.25H19.25' stroke='%232873E3' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.25 19.25V8.25' stroke='%232873E3' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+          }
+        }
+        &.ui {
+          strong {
+            &::before {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M13.7501 1.83331H5.50008C5.01385 1.83331 4.54754 2.02647 4.20372 2.37028C3.8599 2.7141 3.66675 3.18042 3.66675 3.66665V18.3333C3.66675 18.8195 3.8599 19.2859 4.20372 19.6297C4.54754 19.9735 5.01385 20.1666 5.50008 20.1666H16.5001C16.9863 20.1666 17.4526 19.9735 17.7964 19.6297C18.1403 19.2859 18.3334 18.8195 18.3334 18.3333V6.41665L13.7501 1.83331Z' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.8333 1.83331V5.49998C12.8333 5.98621 13.0264 6.45253 13.3702 6.79634C13.714 7.14016 14.1804 7.33331 14.6666 7.33331H18.3333' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.16659 8.25H7.33325' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.6666 11.9167H7.33325' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.6666 15.5833H7.33325' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+          }
+        }
+        &.micro {
+          strong {
+            &::before {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M16.6499 1.46532C17.0714 1.11404 17.6431 0.916687 18.2393 0.916687C18.8354 0.916687 19.4072 1.11404 19.8287 1.46532C20.2502 1.8166 20.4871 2.29304 20.4871 2.78983C20.4871 3.28662 20.2502 3.76306 19.8287 4.11434L7.11129 14.7131C6.85937 14.923 6.54798 15.0766 6.20593 15.1596L3.16476 15.899C3.07364 15.9212 2.97706 15.9225 2.88511 15.9029C2.79317 15.8833 2.70925 15.8434 2.64213 15.7875C2.57502 15.7315 2.52718 15.6616 2.50363 15.585C2.48007 15.5084 2.48166 15.4279 2.50824 15.3519L3.3956 12.8176C3.49537 12.5329 3.67965 12.2737 3.9314 12.064L16.6499 1.46532Z' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M0.916748 22.9167H22.9167' stroke='%236B7280' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+          }
+        }
+      }
+    }
+  }
+  &__effect {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    .box {
+      position: relative;
+      padding: 20px 16px;
+      border-radius: 14px;
+      border: 1px solid $cl-border;
+      background-color: #f5f7fb;
+      text-align: center;
+      strong {
+        @include font(18px, 600, 1.38);
+        color: $cl-title;
+      }
+      p {
+        margin-top: 8px;
+        @include font(16px, 400, 1.43);
+        color: $cl-text-2;
+        word-break: keep-all;
+      }
+      & + .box {
+        &::before {
+          content: "";
+          width: 15px;
+          height: 22px;
+          @include ps-icon;
+          left: -17px;
+          @include bg-set;
+          background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.39062 9.9375L5.51562 9.09375L9.01562 5.59375H0V4.35938H9.01562L5.51562 0.859375L6.39062 0L11.3594 4.96875L6.39062 9.9375Z' fill='%234A5565'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+  }
+  &__case {
+    position: relative;
+    margin-top: 8px;
+    padding: 32px 32px 64px;
+    border-radius: 24px;
+    background-color: #f5f7fb;
+    @include flex(column, center, flex-start, 20px);
+    .grid {
+      width: fit-content;
+      gap: min(12vw, 188px);
+      .box {
+        width: fit-content;
+        padding: 24px;
+        @include flex(column, center, flex-start, 16px);
+        span {
+          @include font(16px, 600, 1.5);
+        }
+        img {
+          object-fit: contain;
+        }
+        &.before {
+          span {
+            color: $cl-red;
+          }
+        }
+        &.after {
+          span {
+            color: $cl-green;
+          }
+        }
+      }
+    }
+    strong {
+      @include font(18px, 600, 1.38);
+      color: $cl-black;
+      text-align: center;
+    }
+    p {
+      @include font(18px, 400, 1.38);
+      color: #696969;
+      position: absolute;
+      right: 28px;
+      bottom: 20px;
+    }
+    &.nt-1 {
+      .grid {
+        .box {
+          img {
+            width: 310px;
+            height: 382px;
+          }
+        }
+      }
+    }
+    &.nt-2 {
+      .grid {
+        .box {
+          img {
+            width: 380px;
+            height: 266px;
+          }
+        }
+      }
+    }
+  }
+  &__core {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    .grid {
+      .box {
+        border-radius: 14px;
+        padding: 24px;
+        strong {
+          @include font(20px, 600, 1.4);
+          color: $cl-sub-title;
+        }
+        p {
+          margin-top: 4px;
+          @include font(18px, 400, 1.38);
+          color: $cl-text-2;
+        }
+      }
+    }
+  }
+  &__why {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    .grid {
+      .box {
+        padding: 28px;
+        strong {
+          display: block;
+          @include font(20px, 600, 1.4);
+          color: $cl-sub-title;
+          position: relative;
+          padding-left: 36px;
+          &::before {
+            content: "";
+            width: 28px;
+            height: 28px;
+            @include ps-icon;
+            @include bg-set;
+          }
+        }
+        p {
+          margin-top: 12px;
+          @include font(18px, 400, 1.4);
+          color: $cl-text-2;
         }
         &.nt-1 {
-            .grid {
-                .box {
-                    img {
-                        width: 310px;
-                        height: 382px;
-                    }
-                }
+          strong {
+            &::before {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M23.3334 15.1666C23.3334 21 19.2501 23.9166 14.3967 25.6083C14.1426 25.6944 13.8665 25.6903 13.6151 25.5966C8.75008 23.9166 4.66675 21 4.66675 15.1666V6.99995C4.66675 6.69054 4.78966 6.39379 5.00846 6.175C5.22725 5.9562 5.524 5.83329 5.83341 5.83329C8.16675 5.83329 11.0834 4.43329 13.1134 2.65995C13.3606 2.44879 13.675 2.33276 14.0001 2.33276C14.3252 2.33276 14.6396 2.44879 14.8867 2.65995C16.9284 4.44495 19.8334 5.83329 22.1667 5.83329C22.4762 5.83329 22.7729 5.9562 22.9917 6.175C23.2105 6.39379 23.3334 6.69054 23.3334 6.99995V15.1666Z' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.5 14.0001L12.8333 16.3334L17.5 11.6667' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
             }
+          }
         }
         &.nt-2 {
+          strong {
+            &::before {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M9.33342 3.5L4.66675 8.16667L9.33342 12.8333' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.66675 8.16675H23.3334' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.6667 24.5001L23.3334 19.8334L18.6667 15.1667' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M23.3334 19.8333H4.66675' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+          }
+        }
+        &.nt-3 {
+          strong {
+            &::before {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M18.6666 24.5V22.1667C18.6666 20.929 18.1749 19.742 17.2998 18.8668C16.4246 17.9917 15.2376 17.5 13.9999 17.5H6.99992C5.76224 17.5 4.57526 17.9917 3.70009 18.8668C2.82492 19.742 2.33325 20.929 2.33325 22.1667V24.5' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.4999 12.8333C13.0772 12.8333 15.1666 10.744 15.1666 8.16667C15.1666 5.58934 13.0772 3.5 10.4999 3.5C7.92259 3.5 5.83325 5.58934 5.83325 8.16667C5.83325 10.744 7.92259 12.8333 10.4999 12.8333Z' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25.6667 24.4999V22.1666C25.666 21.1326 25.3218 20.1282 24.6883 19.311C24.0549 18.4938 23.1679 17.9101 22.1667 17.6516' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.6667 3.65161C19.6706 3.90863 20.5603 4.49243 21.1957 5.31097C21.831 6.12952 22.1759 7.13625 22.1759 8.17244C22.1759 9.20864 21.831 10.2154 21.1957 11.0339C20.5603 11.8525 19.6706 12.4363 18.6667 12.6933' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+          }
+        }
+        &.nt-4 {
+          strong {
+            &::before {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M13.9999 25.6666C20.4432 25.6666 25.6666 20.4432 25.6666 13.9999C25.6666 7.5566 20.4432 2.33325 13.9999 2.33325C7.5566 2.33325 2.33325 7.5566 2.33325 13.9999C2.33325 20.4432 7.5566 25.6666 13.9999 25.6666Z' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14 7V14L18.6667 16.3333' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+          }
+        }
+      }
+    }
+  }
+  &__standard {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    .common-table {
+      tbody {
+        td {
+          &:first-child {
+            @include font(20px, 600, 1.4);
+            color: $cl-sub-title;
+            text-align: center;
+            span {
+              display: block;
+              margin-top: 2px;
+              @include font(18px, 400, 1.38);
+              color: $cl-gr-400;
+            }
+          }
+          &:nth-child(2) {
+            > p {
+              @include font(18px, 400, 1.38);
+              color: $cl-title;
+            }
             .grid {
-                .box {
-                    img {
-                        width: 380px;
-                        height: 266px;
-                    }
-                }
-            }
-        }
-    }
-    &__core {
-        width: 100%;
-        position: relative;
-        margin-top: 20px;
-        .grid {
-            .box {
-                border-radius: 14px;
-                padding: 24px;
-                strong {
-                    @include font(20px, 600, 1.4);
-                    color: $cl-sub-title;
-                }
+              width: calc(100% + 40px);
+              margin: 16px -20px 0;
+              position: relative;
+              .box {
                 p {
-                    margin-top: 4px;
-                    @include font(18px, 400, 1.38);
-                    color: $cl-text-2;
+                  width: 100%;
+                  height: 48px;
+                  position: relative;
+                  background-color: #f5f7fb;
+                  border-bottom: 1px solid $cl-border;
+                  padding: 12px 20px;
+                  @include font(16px, 600, 1.5);
+                  color: $cl-text-3;
                 }
-            }
-        }
-    }
-    &__why {
-        width: 100%;
-        position: relative;
-        margin-top: 20px;
-        .grid {
-            .box {
-                padding: 28px;
-                strong {
-                    display: block;
-                    @include font(20px, 600, 1.4);
-                    color: $cl-sub-title;
-                    position: relative;
-                    padding-left: 36px;
+                span {
+                  display: block;
+                  padding: 16px 20px 0 50px;
+                  position: relative;
+                  @include font(18px, 400, 1.4);
+                  color: $cl-text-1;
+                  word-break: keep-all;
+                  &::before {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 18px;
+                    left: 20px;
+                    @include bg-set;
+                  }
+                }
+                &.cnt-q {
+                  span {
                     &::before {
-                        content: "";
-                        width: 28px;
-                        height: 28px;
-                        @include ps-icon;
-                        @include bg-set;
+                      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_686_1226' fill='white'%3E%3Cpath d='M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z'/%3E%3C/mask%3E%3Cpath d='M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z' fill='%23E4F2FF'/%3E%3Cpath d='M0 10M20 10M20 10M0 10M10 0M20 10M10 20M0 10M10 20V19.4286C4.79274 19.4286 0.571429 15.2073 0.571429 10H0H-0.571429C-0.571429 15.8384 4.16156 20.5714 10 20.5714V20ZM20 10H19.4286C19.4286 15.2073 15.2073 19.4286 10 19.4286V20V20.5714C15.8384 20.5714 20.5714 15.8384 20.5714 10H20ZM10 0V0.571429C15.2073 0.571429 19.4286 4.79274 19.4286 10H20H20.5714C20.5714 4.16156 15.8384 -0.571429 10 -0.571429V0ZM10 0V-0.571429C4.16156 -0.571429 -0.571429 4.16156 -0.571429 10H0H0.571429C0.571429 4.79274 4.79274 0.571429 10 0.571429V0Z' fill='%232873E3' mask='url(%23path-1-inside-1_686_1226)'/%3E%3Cpath d='M13.3327 7.5L8.74935 12.0833L6.66602 10' stroke='%232873E3' stroke-width='1.04167' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
                     }
+                  }
                 }
-                p {
-                    margin-top: 12px;
-                    @include font(18px, 400, 1.4);
-                    color: $cl-text-2;
-                }
-                &.nt-1 {
-                    strong {
-                        &::before {
-                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M23.3334 15.1666C23.3334 21 19.2501 23.9166 14.3967 25.6083C14.1426 25.6944 13.8665 25.6903 13.6151 25.5966C8.75008 23.9166 4.66675 21 4.66675 15.1666V6.99995C4.66675 6.69054 4.78966 6.39379 5.00846 6.175C5.22725 5.9562 5.524 5.83329 5.83341 5.83329C8.16675 5.83329 11.0834 4.43329 13.1134 2.65995C13.3606 2.44879 13.675 2.33276 14.0001 2.33276C14.3252 2.33276 14.6396 2.44879 14.8867 2.65995C16.9284 4.44495 19.8334 5.83329 22.1667 5.83329C22.4762 5.83329 22.7729 5.9562 22.9917 6.175C23.2105 6.39379 23.3334 6.69054 23.3334 6.99995V15.1666Z' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.5 14.0001L12.8333 16.3334L17.5 11.6667' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                        }
+                &.cnt-a {
+                  span {
+                    &::before {
+                      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_686_1231' fill='white'%3E%3Cpath d='M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z'/%3E%3C/mask%3E%3Cpath d='M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z' fill='%23F0FDF4'/%3E%3Cpath d='M0 10M20 10M20 10M0 10M10 0M20 10M10 20M0 10M10 20V19.4286C4.79274 19.4286 0.571429 15.2073 0.571429 10H0H-0.571429C-0.571429 15.8384 4.16156 20.5714 10 20.5714V20ZM20 10H19.4286C19.4286 15.2073 15.2073 19.4286 10 19.4286V20V20.5714C15.8384 20.5714 20.5714 15.8384 20.5714 10H20ZM10 0V0.571429C15.2073 0.571429 19.4286 4.79274 19.4286 10H20H20.5714C20.5714 4.16156 15.8384 -0.571429 10 -0.571429V0ZM10 0V-0.571429C4.16156 -0.571429 -0.571429 4.16156 -0.571429 10H0H0.571429C0.571429 4.79274 4.79274 0.571429 10 0.571429V0Z' fill='%23BBF7D0' mask='url(%23path-1-inside-1_686_1231)'/%3E%3Cpath d='M13.3327 7.5L8.74935 12.0833L6.66602 10' stroke='%23158463' stroke-width='1.04167' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
                     }
+                  }
                 }
-                &.nt-2 {
-                    strong {
-                        &::before {
-                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M9.33342 3.5L4.66675 8.16667L9.33342 12.8333' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.66675 8.16675H23.3334' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.6667 24.5001L23.3334 19.8334L18.6667 15.1667' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M23.3334 19.8333H4.66675' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                        }
-                    }
-                }
-                &.nt-3 {
-                    strong {
-                        &::before {
-                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M18.6666 24.5V22.1667C18.6666 20.929 18.1749 19.742 17.2998 18.8668C16.4246 17.9917 15.2376 17.5 13.9999 17.5H6.99992C5.76224 17.5 4.57526 17.9917 3.70009 18.8668C2.82492 19.742 2.33325 20.929 2.33325 22.1667V24.5' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.4999 12.8333C13.0772 12.8333 15.1666 10.744 15.1666 8.16667C15.1666 5.58934 13.0772 3.5 10.4999 3.5C7.92259 3.5 5.83325 5.58934 5.83325 8.16667C5.83325 10.744 7.92259 12.8333 10.4999 12.8333Z' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25.6667 24.4999V22.1666C25.666 21.1326 25.3218 20.1282 24.6883 19.311C24.0549 18.4938 23.1679 17.9101 22.1667 17.6516' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.6667 3.65161C19.6706 3.90863 20.5603 4.49243 21.1957 5.31097C21.831 6.12952 22.1759 7.13625 22.1759 8.17244C22.1759 9.20864 21.831 10.2154 21.1957 11.0339C20.5603 11.8525 19.6706 12.4363 18.6667 12.6933' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                        }
-                    }
-                }
-                &.nt-4 {
-                    strong {
-                        &::before {
-                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M13.9999 25.6666C20.4432 25.6666 25.6666 20.4432 25.6666 13.9999C25.6666 7.5566 20.4432 2.33325 13.9999 2.33325C7.5566 2.33325 2.33325 7.5566 2.33325 13.9999C2.33325 20.4432 7.5566 25.6666 13.9999 25.6666Z' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14 7V14L18.6667 16.3333' stroke='%232F4B94' stroke-width='1.83333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                        }
-                    }
-                }
+              }
             }
+          }
         }
+      }
     }
-    &__standard {
+  }
+  &__ibk {
+    &-visual {
+      .img {
+        width: 430px;
+        margin: 32px auto 56px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .table {
         width: 100%;
         position: relative;
-        margin-top: 20px;
-        .common-table {
-            tbody {
-                td {
-                    &:first-child {
-                        @include font(20px, 600, 1.4);
-                        color: $cl-sub-title;
-                        text-align: center;
-                        span {
-                            display: block;
-                            margin-top: 2px;
-                            @include font(18px, 400, 1.38);
-                            color: $cl-gr-400;
-                        }
-                    }
-                    &:nth-child(2) {
-                        > p {
-                            @include font(18px, 400, 1.38);
-                            color: $cl-title;
-                        }
-                        .grid {
-                            width: calc(100% + 40px);
-                            margin: 16px -20px 0;
-                            position: relative;
-                            .box {
-                                p {
-                                    width: 100%;
-                                    height: 48px;
-                                    position: relative;
-                                    background-color: $cl-box-bg;
-                                    border-bottom: 1px solid $cl-border;
-                                    padding: 12px 20px;
-                                    @include font(16px, 600, 1.5);
-                                    color: $cl-text-3;
-                                }
-                                span {
-                                    display: block;
-                                    padding: 16px 20px 0 50px;
-                                    position: relative;
-                                    @include font(18px, 400, 1.4);
-                                    color: $cl-text-1;
-                                    word-break: keep-all;
-                                    &::before {
-                                        content: "";
-                                        width: 20px;
-                                        height: 20px;
-                                        position: absolute;
-                                        top: 18px;
-                                        left: 20px;
-                                        @include bg-set;
-                                    }
-                                }
-                                &.cnt-q {
-                                    span {
-                                        &::before {
-                                            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_686_1226' fill='white'%3E%3Cpath d='M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z'/%3E%3C/mask%3E%3Cpath d='M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z' fill='%23E4F2FF'/%3E%3Cpath d='M0 10M20 10M20 10M0 10M10 0M20 10M10 20M0 10M10 20V19.4286C4.79274 19.4286 0.571429 15.2073 0.571429 10H0H-0.571429C-0.571429 15.8384 4.16156 20.5714 10 20.5714V20ZM20 10H19.4286C19.4286 15.2073 15.2073 19.4286 10 19.4286V20V20.5714C15.8384 20.5714 20.5714 15.8384 20.5714 10H20ZM10 0V0.571429C15.2073 0.571429 19.4286 4.79274 19.4286 10H20H20.5714C20.5714 4.16156 15.8384 -0.571429 10 -0.571429V0ZM10 0V-0.571429C4.16156 -0.571429 -0.571429 4.16156 -0.571429 10H0H0.571429C0.571429 4.79274 4.79274 0.571429 10 0.571429V0Z' fill='%232873E3' mask='url(%23path-1-inside-1_686_1226)'/%3E%3Cpath d='M13.3327 7.5L8.74935 12.0833L6.66602 10' stroke='%232873E3' stroke-width='1.04167' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-                                        }
-                                    }
-                                }
-                                &.cnt-a {
-                                    span {
-                                        &::before {
-                                            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_686_1231' fill='white'%3E%3Cpath d='M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z'/%3E%3C/mask%3E%3Cpath d='M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z' fill='%23F0FDF4'/%3E%3Cpath d='M0 10M20 10M20 10M0 10M10 0M20 10M10 20M0 10M10 20V19.4286C4.79274 19.4286 0.571429 15.2073 0.571429 10H0H-0.571429C-0.571429 15.8384 4.16156 20.5714 10 20.5714V20ZM20 10H19.4286C19.4286 15.2073 15.2073 19.4286 10 19.4286V20V20.5714C15.8384 20.5714 20.5714 15.8384 20.5714 10H20ZM10 0V0.571429C15.2073 0.571429 19.4286 4.79274 19.4286 10H20H20.5714C20.5714 4.16156 15.8384 -0.571429 10 -0.571429V0ZM10 0V-0.571429C4.16156 -0.571429 -0.571429 4.16156 -0.571429 10H0H0.571429C0.571429 4.79274 4.79274 0.571429 10 0.571429V0Z' fill='%23BBF7D0' mask='url(%23path-1-inside-1_686_1231)'/%3E%3Cpath d='M13.3327 7.5L8.74935 12.0833L6.66602 10' stroke='%23158463' stroke-width='1.04167' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+        table {
+          width: 100%;
+          position: relative;
+          border-collapse: collapse;
+          table-layout: fixed;
+          border-block: 1px solid $cl-gr-900;
+          tr {
+            width: 100%;
+            position: relative;
+            border-bottom: 1px solid $cl-gr-200;
+            &:last-child {
+              border-bottom: none;
             }
+            th,
+            td {
+              padding: 20px;
+            }
+            th {
+              @include font(18px, 600, 1.38);
+              color: $cl-title;
+              vertical-align: top;
+            }
+            td {
+              strong {
+                display: block;
+                margin-bottom: 4px;
+                @include font(16px, 600, 1.5);
+                color: $cl-title;
+              }
+              p {
+                @include font(16px, 400, 1.4);
+                color: $cl-title;
+              }
+            }
+          }
         }
+      }
     }
-    &__ibk {
-        &-visual {
-            .img {
-                width: 430px;
-                margin: 32px auto 56px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                }
-            }
-            .table {
-                width: 100%;
-                position: relative;
-                table {
-                    width: 100%;
-                    position: relative;
-                    border-collapse: collapse;
-                    table-layout: fixed;
-                    border-block: 1px solid $cl-gr-900;
-                    tr {
-                        width: 100%;
-                        position: relative;
-                        border-bottom: 1px solid $cl-gr-200;
-                        &:last-child {
-                            border-bottom: none;
-                        }
-                        th, td {
-                            padding: 20px;
-                        }
-                        th {
-                            @include font(18px, 600, 1.38);
-                            color: $cl-title;
-                            vertical-align: top;
-                        }
-                        td {
-                            strong {
-                                display: block;
-                                margin-bottom: 4px;
-                                @include font(16px, 600, 1.5);
-                                color: $cl-title;
-                            }
-                            p {
-                                @include font(16px, 400, 1.4);
-                                color: $cl-title;
-                            }
-                        }
-                    }
-                }
-            }
+    &-system {
+      margin-top: 32px;
+      .circle {
+        width: 100%;
+        position: relative;
+        @include flex(row, center, center, 64px);
+        border-radius: 20px;
+        background-color: #f5f7fb;
+        padding: 40px;
+        @media screen and (max-width: 1400px) {
+          @include flex(row, center, center, 64px);
+          flex-wrap: wrap;
         }
-        &-system {
-            margin-top: 32px;
-            .circle {
-                width: 100%;
-                position: relative;
-                @include flex(row, center, center, 64px);
-                border-radius: 20px;
-                background-color: $cl-box-bg;
-                padding: 40px;
-                @media screen and (max-width: 1400px) {
-                    @include flex(row, center, center, 64px);
-                    flex-wrap: wrap;
-                }
-                .box {
-                    @include flex(column, center, center, 16px);
-                    strong {
-                        width: 143px;
-                        height: 143px;
-                        border-radius: 50%;
-                        background-color: $cl-primary;
-                        @include flex(row, center, center, 0);
-                        @include font(24px, 700, 1);
-                        color: $cl-white;
-                    }
-                    p {
-                        @include font(18px, 600, 1.3);
-                        color: $cl-gr-500;
-                    }
-                }
-            }
-            .blue-num-list {
-                margin-top: 40px;
-                ol {
-                    li {
-                        strong {
-                            @include font(20px, 600, 1.4);
-                            color: $cl-title;
-                        }
-                        p {
-                            margin-top: 6px;
-                            @include font(18px, 400, 1.3);
-                            color: $cl-title;
-                        }
-                        & + li {
-                            margin-top: 40px;
-                        }
-                    }
-                }
-            }
+        .box {
+          @include flex(column, center, center, 16px);
+          strong {
+            width: 143px;
+            height: 143px;
+            border-radius: 50%;
+            background-color: #2873e3;
+            @include flex(row, center, center, 0);
+            @include font(24px, 700, 1);
+            color: $cl-white;
+          }
+          p {
+            @include font(18px, 600, 1.3);
+            color: $cl-gr-500;
+          }
         }
-        &-rule {
-            margin-top: 32px;
-            .grid {
-                .box {
-                    @include flex(column, center, flex-shrink, 52px);
-                    .top {
-                        width: 100%;
-                        position: relative;
-                        border-radius: 16px;
-                        border: 1px solid $cl-border;
-                        background-color: $cl-blue-50;
-                        padding: 20px;
-                        h3 {
-                            @include font(24px, 700, 1.4);
-                            color: $cl-primary;
-                        }
-                        p {
-                            margin-top: 20px;
-                            @include font(16px, 400, 1.4);
-                            color: $cl-gr-900;
-                        }
-                        &::after {
-                            content: "";
-                            width: 24px;
-                            height: 24px;
-                            position: absolute;
-                            bottom: -38px;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 5L12 19' stroke='%23D3D6DE' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19 12L12 19L5 12' stroke='%23D3D6DE' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                        }
-                    }
-                    .bottom {
-                        flex: 1;
-                        width: 100%;
-                        position: relative;
-                        border-radius: 16px;
-                        border: 1px solid $cl-border;
-                        background-color: $cl-box-bg;
-                        padding: 20px;
-                        > * {
-                            display: block;
-                        }
-                        .step-tit {
-                            @include font(20px, 600, 1.4);
-                            color: $cl-title;
-                            span {
-                                display: block;
-                                @include font(16px, 400, 1.4);
-                            }
-                        }
-                        .voicetone {
-                            width: 100%;
-                            position: relative;
-                            margin-top: 20px;
-                            @include flex(column, flex-start, flex-start, 8px);
-                            span {
-                                @include font(16px, 600, 1.5);
-                                color: $cl-text-3;
-                            }
-                            .flex-row {
-                                margin-top: 4px;
-                                width: 100%;
-                                @include flex(row, center, flex-start, 8px);
-                                flex-wrap: wrap;
-                                p {
-                                    width: fit-content;
-                                    padding: 4px 8px;
-                                    border-radius: 8px;
-                                    @include font(13px, 600, 1.5);
-                                }
-                            }
-                            .voice {
-                                .flex-row {
-                                    p {
-                                        background-color: $cl-primary;
-                                        color: $cl-white;
-                                    }
-                                }
-                            }
-                            .tone {
-                                .flex-row {
-                                    p {
-                                        border: 1px solid $cl-blue-150;
-                                        background-color: $cl-blue-50;
-                                        color: $cl-primary;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+      }
+      .blue-num-list {
+        margin-top: 40px;
+        ol {
+          li {
+            strong {
+              @include font(20px, 600, 1.4);
+              color: $cl-title;
             }
+            p {
+              margin-top: 6px;
+              @include font(18px, 400, 1.3);
+              color: $cl-title;
+            }
+            & + li {
+              margin-top: 40px;
+            }
+          }
         }
+      }
     }
+    &-rule {
+      margin-top: 32px;
+      .grid {
+        .box {
+          @include flex(column, center, flex-shrink, 52px);
+          .top {
+            width: 100%;
+            position: relative;
+            border-radius: 16px;
+            border: 0.8px solid #e2e8f0;
+            background-color: $cl-blue-50;
+            padding: 20px;
+            h3 {
+              @include font(24px, 700, 1.4);
+              color: #2873e3;
+            }
+            p {
+              margin-top: 20px;
+              @include font(16px, 400, 1.4);
+              color: $cl-gr-900;
+            }
+            &::after {
+              content: "";
+              width: 24px;
+              height: 24px;
+              position: absolute;
+              bottom: -38px;
+              left: 50%;
+              transform: translateX(-50%);
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 5L12 19' stroke='%23D3D6DE' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19 12L12 19L5 12' stroke='%23D3D6DE' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+          }
+          .bottom {
+            flex: 1;
+            width: 100%;
+            position: relative;
+            border-radius: 16px;
+            border: 0.8px solid #e2e8f0;
+            background-color: #f5f7fb;
+            padding: 20px;
+            > * {
+              display: block;
+            }
+            .step-tit {
+              @include font(20px, 600, 1.4);
+              color: $cl-title;
+              span {
+                display: block;
+                @include font(16px, 400, 1.4);
+              }
+            }
+            .voicetone {
+              width: 100%;
+              position: relative;
+              margin-top: 20px;
+              @include flex(column, flex-start, flex-start, 8px);
+              span {
+                @include font(16px, 600, 1.5);
+                color: $cl-text-3;
+              }
+              .flex-row {
+                margin-top: 4px;
+                width: 100%;
+                @include flex(row, center, flex-start, 8px);
+                flex-wrap: wrap;
+                p {
+                  width: fit-content;
+                  padding: 4px 8px;
+                  border-radius: 8px;
+                  @include font(13px, 600, 1.5);
+                }
+              }
+              .voice {
+                .flex-row {
+                  p {
+                    background-color: #2873e3;
+                    color: $cl-white;
+                  }
+                }
+              }
+              .tone {
+                .flex-row {
+                  p {
+                    border: 1px solid $cl-blue-150;
+                    background-color: $cl-blue-50;
+                    color: $cl-primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
