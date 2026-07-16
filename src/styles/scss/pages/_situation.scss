@@ -5,6 +5,13 @@
   padding: 50px;
   background-color: #f5f7fb;
   border-radius: 24px;
+  .cnt-sub-title + p {
+    @include font(16px, 400, 23px);
+    color: #4e4e4e;
+  }
+  .cnt-sub-title:has(+ p) {
+    margin-bottom: 8px;
+  }
   .pre-face {
     font-size: 16px;
     font-weight: 600;
@@ -188,6 +195,51 @@
       background: #bdf4e9
         url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8L7 11L12 5' stroke='%23212121' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
         no-repeat center;
+    }
+  }
+}
+.message-template-wrap {
+  padding: 50px;
+  background-color: #f5f7fb;
+  border-radius: 40px;
+  h4 {
+    @include font(24px, 700, 1.4);
+  }
+  p {
+    margin-top: 8px;
+    @include font(16px, 400, 23px);
+    color: #4e4e4e;
+  }
+  .inner-box {
+    margin-top: 40px;
+    @include flex(row, flex-start, space-between, 40px);
+    & > div {
+      flex: 1;
+    }
+    h5 {
+      @include font(20px, 600, 28px);
+    }
+    p {
+      margin-top: 5px;
+    }
+    ul {
+      margin-top: 21px;
+      li {
+        @include flex(row, flex-start, flex-start, 9px);
+        * {
+          @include font(16px, 600, 24px);
+        }
+        span {
+          color: #4393f0;
+        }
+        p {
+          margin-top: 0;
+          font-weight: 400;
+        }
+        & + li {
+          margin-top: 8px;
+        }
+      }
     }
   }
 }

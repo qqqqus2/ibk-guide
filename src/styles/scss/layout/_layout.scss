@@ -399,6 +399,33 @@
       }
     }
   }
+  &.type-2 {
+    ol li {
+      @include font(16px, 600, 32px);
+      * {
+        color: #101116;
+      }
+      & + li {
+        margin-top: 14px;
+      }
+      ul li {
+        margin-top: 12px;
+        padding: 0;
+        * {
+          @include font(16px, 400, 23px);
+        }
+        p {
+          margin-top: 4px;
+        }
+        span {
+          color: #5a5e6c;
+        }
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
 }
 
 .detail-case-box {
