@@ -1,0 +1,69 @@
+.component {
+  &__act {
+    .top-box {
+      flex: 1;
+      @include flex(row, flex-start, flex-start, 30px);
+      margin-top: 40px;
+    }
+    .bg-box {
+      width: 100%;
+      padding: 24px;
+      background-color: $cl-blue-50;
+      border-radius: 20px;
+      h3 {
+        @include font(24px, 700, 140%);
+        color: #2873e3;
+      }
+    }
+    .badge-box {
+      @include flex(row, center, flex-start);
+      gap: 6px;
+      margin-top: 15px;
+      span {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: $cl-white;
+        border-radius: 8px;
+        @include font(14px, 700, 18px);
+        color: $cl-text-2;
+      }
+    }
+    .list-box {
+      margin-top: 16px;
+      li {
+        @include font(16px, 400, 23px);
+        color: $cl-title;
+        & + li {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+  & .page__tab-sublist {
+    margin-bottom: 28px;
+    & .tab-btn {
+      width: auto;
+      padding: 0 18px;
+    }
+  }
+  & .blue-num-list {
+    margin-top: 30px;
+    li {
+      @include flex(column, flex-start, flex-start, 4px);
+      strong {
+        @include font(16px, 600, 32px);
+      }
+      & + li {
+        margin-top: 20px;
+      }
+    }
+  }
+  .ex-box {
+    .rule-box .rec-tone {
+      padding-bottom: 0;
+    }
+    & + .ex-box {
+      margin-top: 40px;
+    }
+  }
+}
