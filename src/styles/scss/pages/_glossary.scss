@@ -1,0 +1,72 @@
+.glossary {
+    &__list{
+        display:flex;
+        flex-direction: column;
+        gap:16px 0;
+        margin-top:16px;
+        .before-after-wrap { 
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                color:#4e4e4e;
+                margin-bottom: 10px;
+            }
+            .arrow-list{
+                display: flex;
+                flex-direction: column;
+                gap:10px 0;
+                .item{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .before{
+                        flex:1;
+                        border-radius: 12px;
+                        padding:20px;
+                        background-color: #F4F6FA;
+                        border:1px #D3D6DE solid;
+                        font-size:15px;
+                        color:#454855;
+                        font-weight: 400;
+                        display: flex;
+                         align-items: center;
+                        strong{
+                            font-weight:600;
+                            color:#8A909A;
+                            display:inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+                    .ico-arrow{
+                        display: flex;
+                        height:10px;
+                        flex:0 0 90px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-image: url("../../../src/images/icon/glossary/ico-arrow.svg")
+                    }
+                    .after{
+                        flex:1;
+                        padding:20px;
+                        font-size: 15px; 
+                        border-radius: 12px;
+                        background-color: #EAF3FF;
+                        border:1px #C1E0FC solid;
+                        color:#101116;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        strong{
+                            font-weight:700;
+                            color:#2873E3;
+                            display:inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            } 
+            
+        }
+    }
+    
+}
