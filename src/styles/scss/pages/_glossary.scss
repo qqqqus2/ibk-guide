@@ -4,17 +4,34 @@
         flex-direction: column;
         gap:16px 0;
         margin-top:16px;
+        li{
+            &:before{
+                content:none;
+            }
+        }
+        
         .before-after-wrap { 
             p{
                 font-size: 18px;
                 font-weight: 400;
                 color:#4e4e4e;
-                margin-bottom: 10px;
+                position:relative;
+                &::before {
+                    content: "";
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background-color: $cl-text-2;
+                    position: absolute;
+                    top: 10px;
+                    left: -12px;
+                }
             }
             .arrow-list{
                 display: flex;
                 flex-direction: column;
                 gap:10px 0;
+                margin-top: 10px;
                 .item{
                     display: flex;
                     flex-wrap: wrap;
@@ -22,7 +39,7 @@
                     .before{
                         flex:1;
                         border-radius: 12px;
-                        padding:20px;
+                        padding:15px 20px;
                         background-color: #F4F6FA;
                         border:1px #D3D6DE solid;
                         font-size:15px;
@@ -47,7 +64,7 @@
                     }
                     .after{
                         flex:1;
-                        padding:20px;
+                        padding:15px 20px;
                         font-size: 15px; 
                         border-radius: 12px;
                         background-color: #EAF3FF;
