@@ -55,12 +55,18 @@
       }
       & + li {
         margin-top: 20px;
+        .point {
+          color: #2873e3;
+        }
       }
     }
   }
   .ex-box {
     .rule-box .rec-tone {
       padding-bottom: 0;
+      p {
+        text-align: left;
+      }
     }
     & + .ex-box {
       margin-top: 40px;
