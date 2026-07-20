@@ -86,7 +86,7 @@
               display: block;
               width: 100%;
               position: relative;
-              padding: 8px 8px 8px 24px;
+              padding: 8px 8px 8px 8px;
               @include font(14px, 500, 1.4);
               color: $cl-black;
               background-color: transparent;
@@ -132,11 +132,11 @@
                 display: block;
                 width: 100%;
                 position: relative;
-                padding: 8px 8px 8px 40px;
+                padding: 8px 8px 8px 24px;
                 border-radius: 4px;
                 background-color: transparent;
                 @include font(14px, 500, 1.43);
-                color: #767676;
+                color: #000;
                 text-align: left;
                 transition: background-color 0.2s ease-in-out;
                 &::after {
@@ -204,7 +204,7 @@
                   display: block;
                   width: 100%;
                   position: relative;
-                  padding: 8px 8px 8px 56px;
+                  padding: 8px 8px 8px 40px;
                   border-radius: 4px;
                   background-color: transparent;
                   @include font(14px, 500, 1.43);
