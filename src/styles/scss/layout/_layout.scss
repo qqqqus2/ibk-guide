@@ -221,6 +221,64 @@
                     color: $cl-primary;
                     font-weight: 600;
                   }
+                  .depth-4 {
+                    display: block;
+                  }
+                }
+                & + li {
+                  margin-top: 4px;
+                }
+                &:last-child {
+                  margin-bottom: 2px;
+                }
+              }
+              &:has(.depth-4) > li {
+                > button:after {
+                  content: "";
+                  width: 20px;
+                  height: 20px;
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  right: 8px;
+                  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M7.5 14.5L12.5 9.5L7.5 4.5' stroke='%23989898' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                  @include bg-set;
+                }
+                &.active {
+                  > button:after {
+                    transform: translateY(-50%) rotate(90deg);
+                  }
+                }
+              }
+            }
+            .depth-4 {
+              width: 100%;
+              position: relative;
+              display: none;
+              > li {
+                width: 100%;
+                position: relative;
+                > a {
+                  display: block;
+                  width: 100%;
+                  position: relative;
+                  padding: 8px 8px 8px 60px;
+                  border-radius: 4px;
+                  background-color: transparent;
+                  @include font(14px, 500, 1.43);
+                  color: #767676;
+                  text-align: left;
+                  transition: background-color 0.2s ease-in-out;
+                  &:hover {
+                    background-color: #f3f3f3;
+                  }
+                }
+                &.active {
+                  > button {
+                    background-color: #eee;
+                    color: $cl-primary;
+                    font-weight: 600;
+                  }
                 }
                 & + li {
                   margin-top: 4px;
@@ -249,8 +307,7 @@
             width: 20px;
             height: 20px;
             @include ps-icon;
-            background: url("../../images/icon/lnb/help.svg") 50% 50% / contain
-              no-repeat;
+            background: url("../../images/icon/lnb/help.svg") 50% 50% / contain no-repeat;
           }
         }
       }
@@ -292,6 +349,9 @@
             }
           }
         }
+      }
+      &:has(.is-sticky) {
+        padding-top: 0;
       }
     }
   }

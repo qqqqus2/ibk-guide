@@ -41,9 +41,19 @@
   }
   & .page__tab-sublist {
     margin-bottom: 28px;
+    transition: 0.5s;
+
     & .tab-btn {
       width: auto;
       padding: 0 18px;
+    }
+    &.is-sticky {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background-color: white;
+      margin: 0;
+      padding: 32px 0 28px;
     }
   }
   & .blue-num-list {
