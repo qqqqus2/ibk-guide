@@ -307,7 +307,8 @@
             width: 20px;
             height: 20px;
             @include ps-icon;
-            background: url("../../images/icon/lnb/help.svg") 50% 50% / contain no-repeat;
+            background: url("../../images/icon/lnb/help.svg") 50% 50% / contain
+              no-repeat;
           }
         }
       }
@@ -315,11 +316,15 @@
     // CONTENT
     .content {
       flex: 1;
-      min-width: 1200px;
+      width: 1096px;
+      max-width: 1096px;
       height: 100%;
+      margin: 0 auto;
       position: relative;
       padding: 96px 50px 100px;
       overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
       .page-title-box {
         margin-bottom: 54px;
         .sub-tit {

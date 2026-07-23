@@ -1314,11 +1314,15 @@ iframe {
 }
 .wrap .container .content {
   flex: 1;
-  min-width: 1200px;
+  width: 1096px;
+  max-width: 1096px;
   height: 100%;
+  margin: 0 auto;
   position: relative;
   padding: 96px 50px 100px;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .wrap .container .content .page-title-box {
   margin-bottom: 54px;
@@ -3930,4 +3934,4 @@ iframe {
   position: absolute;
   top: 10px;
   left: 0;
-}/*# sourceMappingURL=style.css.map */
+}
